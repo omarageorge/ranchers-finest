@@ -38,11 +38,11 @@ const Navigation: React.FC = () => {
             {linkData.map((link) => (
               <li
                 key={link.title}
-                className='border-b border-b-white py-3 px-6 hover:underline hover:underline-offset-8 transition-all duration-200 ease-in lg:border-b-0 lg:p-0'
+                className='border-b border-b-white py-3 px-6 transition-all duration-200 ease-in lg:border-b-0 lg:p-0 group'
               >
                 <Link
                   href={link.url}
-                  className={`${trajanPro.className} block text-white text-lg lg:text-sm`}
+                  className={`${trajanPro.className} block text-white text-lg group-hover:underline group-hover:underline-offset-8 group-hover:text-yellow lg:text-sm`}
                   onClick={() => setSideNavVisible(false)}
                 >
                   {link.title}
@@ -60,7 +60,7 @@ const Navigation: React.FC = () => {
               key={link.url}
               href={link.url}
               target='_blank'
-              className='text-white'
+              className='text-white hover:text-yellow transition-colors duration-300 ease-linear'
             >
               {createElement(link.icon)}
             </Link>
