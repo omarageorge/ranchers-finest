@@ -19,7 +19,7 @@ const Navigation: React.FC = () => {
         {/* Nav Links */}
         <span className='w-full flex items-center justify-between gap-14 lg:w-fit'>
           <Link href='/' className='ml-6 lg:ml-0'>
-            <Image src={logo} className='w-20' alt='' priority />
+            <Image src={logo} className='w-20 lg:w-32' alt='' priority />
           </Link>
 
           <button
