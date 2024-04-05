@@ -16,9 +16,9 @@ const Footer: React.FC = () => {
         <Container>
           <Row>
             <Column title='OUR LOCATION'>
-              <span>Plot 3300, 3301, 3302 & 4723,</span>
-              <span>JambulaStage, Bwaise,</span>
-              <span>Kampala, Uganda.</span>
+              <span>Plot 3300, 3301, 3302 & 4723</span>
+              <span>Jambula stage, Bwaise</span>
+              <span>Kampala, Uganda</span>
             </Column>
 
             <Column title='CONTACT US'>
