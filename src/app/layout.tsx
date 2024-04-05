@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${proximaNova.className} antialiased`}>
+      <body className={`${proximaNova.className} antialiased scroll-smooth`}>
         <Navigation />
         {children}
         <Footer />
