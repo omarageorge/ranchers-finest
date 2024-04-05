@@ -8,14 +8,14 @@ const Carousel: React.FC = () => {
   const [slideIndex, setSlideIndex] = useState(0);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
+    const timer = setInterval(() => {
       setSlideIndex((prevSlide) =>
         prevSlide === images.length - 1 ? 0 : prevSlide + 1
       );
     }, 3000);
 
-    return () => clearTimeout(timer);
-  }, [slideIndex]);
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <div className='w-full h-full absolute z-10 overflow-hidden'>
