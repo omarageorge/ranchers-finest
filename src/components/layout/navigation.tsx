@@ -17,13 +17,13 @@ const Navigation: React.FC = () => {
     <nav className='w-full h-20 flex items-center bg-black md:h-24 lg:h-32'>
       <div className='w-full flex items-center justify-between lg:container lg:mx-auto'>
         {/* Nav Links */}
-        <span className='w-full flex items-center justify-between gap-14 lg:w-fit'>
-          <Link href='/' className='ml-6 lg:ml-0'>
-            <Image src={logo} className='w-20 lg:w-32' alt='' priority />
+        <span className='w-full flex items-center justify-between gap-14 xl:w-fit'>
+          <Link href='/' className='ml-6 xl:ml-0'>
+            <Image src={logo} className='w-20 xl:w-32' alt='' priority />
           </Link>
 
           <button
-            className='mr-6 text-2xl text-white cursor-pointer lg:mr-0 lg:hidden'
+            className='mr-6 text-2xl text-white cursor-pointer xl:mr-0 xl:hidden'
             onClick={() => setSideNavVisible(!sideNavVisible)}
           >
             {sideNavVisible ? <FaTimes /> : <FaBars />}
@@ -31,14 +31,14 @@ const Navigation: React.FC = () => {
 
           <ul
             className={clsx(
-              'absolute w-full h-[calc(100vh-5rem)] z-50 top-20 md:top-24 bg-raven translate-x-[-100%] transition-transform duration-300 ease-in-out md:h-[calc(100vh-6rem)] lg:relative lg:w-auto lg:h-min lg:top-0 lg:bg-transparent lg:inline-flex lg:gap-7 lg:translate-x-[0%]',
+              'absolute w-full h-[calc(100vh-5rem)] z-50 top-20 md:top-24 bg-raven translate-x-[-100%] transition-transform duration-300 ease-in-out md:h-[calc(100vh-6rem)] xl:relative xl:w-auto xl:h-min xl:top-0 xl:bg-transparent xl:inline-flex xl:gap-7 xl:translate-x-[0%]',
               sideNavVisible && 'translate-x-[0%]'
             )}
           >
             {linkData.map((link) => (
               <li
                 key={link.title}
-                className='border-b border-b-white py-3 px-6 transition-all duration-200 ease-in lg:border-b-0 lg:p-0 group'
+                className='border-b border-b-white py-3 px-6 transition-all duration-200 ease-in xl:border-b-0 xl:p-0 group'
               >
                 <Link
                   href={link.url}
@@ -49,12 +49,11 @@ const Navigation: React.FC = () => {
                 </Link>
               </li>
             ))}
-            <div className='w-full bg-'></div>
           </ul>
         </span>
 
         {/* Social Media */}
-        <span className='hidden text-2xl gap-5 lg:inline-flex'>
+        <span className='hidden text-2xl gap-5 xl:inline-flex'>
           {socialMedia.map((link) => (
             <Link
               key={link.url}
