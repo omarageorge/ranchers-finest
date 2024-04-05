@@ -31,7 +31,7 @@ const Navigation: React.FC = () => {
 
           <ul
             className={clsx(
-              'absolute w-full h-screen z-50 top-20 md:top-24 bg-raven translate-x-[-100%] transition-transform duration-300 ease-in-out lg:relative lg:w-auto lg:h-min lg:top-0 lg:bg-transparent lg:inline-flex lg:gap-7 lg:translate-x-[0%]',
+              'absolute w-full h-[calc(100vh-5rem)] z-50 top-20 md:top-24 bg-raven translate-x-[-100%] transition-transform duration-300 ease-in-out md:h-[calc(100vh-6rem)] lg:relative lg:w-auto lg:h-min lg:top-0 lg:bg-transparent lg:inline-flex lg:gap-7 lg:translate-x-[0%]',
               sideNavVisible && 'translate-x-[0%]'
             )}
           >
