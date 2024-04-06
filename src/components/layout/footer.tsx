@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
   return (
     <footer className='w-full h-auto'>
       <div className='w-full h-full bg-black'>
-        <div className='w-full h-auto bg-transparent lg:container lg:mx-auto'>
+        <div className='w-full h-auto px-8 py-20 md:px-10 md:py-28 xl:px-20 lx:py-32 xl:container xl:mx-auto'>
           <Row>
             <Column title='OUR LOCATION'>
               <span>Plot 3300, 3301, 3302 & 4723</span>
@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
       {/* Footnote */}
       <div className='w-full h-auto bg-red bg-opacity-95 py-8 md:py-10'>
         <p
-          className={`${proximaNova.className} font-semibold text-lg text-white text-opacity-95 text-center mg:text-2xl`}
+          className={`${proximaNova.className} font-semibold text-lg text-white text-opacity-95 text-center md:text-xl`}
         >
           Copyright &copy; {year} Ranchers Finest
         </p>

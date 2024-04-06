@@ -15,7 +15,7 @@ const Navigation: React.FC = () => {
 
   return (
     <nav className='w-full h-20 flex items-center bg-black md:h-24 lg:h-32'>
-      <div className='w-full flex items-center justify-between lg:container lg:mx-auto'>
+      <div className='w-full flex items-center justify-between  lg:container lg:mx-auto xl:px-20'>
         {/* Nav Links */}
         <span className='w-full flex items-center justify-between gap-14 xl:w-fit'>
           <Link href='/' className='ml-6 xl:ml-0'>
