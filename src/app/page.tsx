@@ -1,7 +1,9 @@
-import { delius, trajanPro } from '@/app/fonts';
+import { delius, proximaNova, trajanPro } from '@/app/fonts';
+import introImage from '@/assets/intro-image.png';
 import Carousel from '@/components/ui/carousel/carousel';
 import CustomerReviewCard from '@/components/ui/customer-review-card';
 import { customerReviews } from '@/lib/data';
+import Image from 'next/image';
 import { Fragment } from 'react';
 
 export default function Home() {
@@ -24,11 +26,36 @@ export default function Home() {
         </div>
       </header>
       <main>
+        <section className='w-full h-auto bg-white px-8 py-20 md:py-28 xl:py-32'>
+          <div className='w-full flex flex-col md:flex-row md:items-center md:justify-center xl:container xl:mx-auto'>
+            <div className='flex-1 space-y-10 md:space-y-6 l xl:w-1/3 '>
+              <h3
+                className={`${trajanPro.className} text-center text-red md:text-left md:`}
+              >
+                Kampala&lsquo;s Premier Sausages & Processed Meats
+              </h3>
+              <Image
+                src={introImage}
+                alt=''
+                className='block mx-auto w-58 h-auto md:hidden'
+              />
+              <p
+                className={`${proximaNova.className} text-black p1 text-center md:text-left`}
+              >
+                Experience the finest sausages, cold cuts, and fresh meats
+                expertly crafted at our state-of-the-art facility in Kampala.
+                Our commitment to quality, freshness, and exceptional taste
+                promises a delicious experience in every bite.
+              </p>
+            </div>
+            <div className='flex-1 xl:w-2/3'>
+              <Image src={introImage} alt='' className='hidden md:block' />
+            </div>
+          </div>
+        </section>
         <section className='w-full h-auto bg-[url("/ranch-bg.jpg")] bg-cover bg-center px-8 py-20 md:py-28 xl:px-0 xl:py-32'>
           <div className='space-y-10 xl:container xl:mx-auto xl:space-y-14'>
-            <h3
-              className={`${trajanPro.className} font-bold text-white text-2xl text-center md:text-4xl`}
-            >
+            <h3 className={`${trajanPro.className} text-white text-center`}>
               WHAT OUR CUSTOMERS SAY
             </h3>
             <div className='grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3'>
