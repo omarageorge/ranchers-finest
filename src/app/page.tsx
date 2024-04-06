@@ -27,16 +27,16 @@ export default function Home() {
       </header>
       <main>
         <section className='w-full h-auto bg-white px-8 py-20 md:px-10 md:py-28 xl:px-20 xl:py-32'>
-          <div className='w-full flex flex-col md:flex-row md:items-center md:justify-center xl:container xl:mx-auto'>
-            <div className='flex-1 space-y-10 md:space-y-6 l xl:w-1/3 '>
+          <div className='w-full flex flex-col md:flex-row md:items-center md:justify-evenly md:gap-2 xl:container xl:mx-auto'>
+            <div className='space-y-10 md:space-y-6 xl:w-2/5'>
               <h3
-                className={`${trajanPro.className} text-center text-red md:text-left md:`}
+                className={`${trajanPro.className} text-center text-red md:text-left`}
               >
                 Kampala&lsquo;s Premier Sausages & Processed Meats
               </h3>
               <Image
                 src={introImage}
-                alt=''
+                alt='Sausages and Cold Cuts'
                 className='block mx-auto w-58 h-auto md:hidden'
               />
               <p
@@ -48,9 +48,11 @@ export default function Home() {
                 promises a delicious experience in every bite.
               </p>
             </div>
-            <div className='flex-1 xl:w-2/3'>
-              <Image src={introImage} alt='' className='hidden md:block' />
-            </div>
+            <Image
+              src={introImage}
+              alt='Sausages and Cold Cuts'
+              className='hidden md:block md:w-1/2 xl:w-2/5'
+            />
           </div>
         </section>
         <section className='w-full h-auto bg-[url("/ranch-bg.jpg")] bg-cover bg-center px-8 py-20 md:px-10 md:py-28 xl:px-20 xl:py-32'>
