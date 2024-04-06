@@ -1,5 +1,4 @@
 import { proximaNova } from '@/app/fonts';
-import Container from '@/components/ui/container';
 import Row from '@/components/ui/footer/row';
 import { socialMedia } from '@/lib/data';
 import linkData from '@/lib/nav-links';
@@ -13,7 +12,7 @@ const Footer: React.FC = () => {
   return (
     <footer className='w-full h-auto'>
       <div className='w-full h-full bg-black'>
-        <Container>
+        <div className='w-full h-auto bg-transparent lg:container lg:mx-auto'>
           <Row>
             <Column title='OUR LOCATION'>
               <span>Plot 3300, 3301, 3302 & 4723</span>
@@ -52,7 +51,7 @@ const Footer: React.FC = () => {
               ))}
             </Column>
           </Row>
-        </Container>
+        </div>
       </div>
 
       {/* Footnote */}
