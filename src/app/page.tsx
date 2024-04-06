@@ -23,20 +23,22 @@ export default function Home() {
           </h2>
         </div>
       </header>
-      <section className='w-full h-auto bg-[url("/ranch-bg.jpg")] bg-cover bg-center px-8 py-20 md:py-28 xl:px-0 xl:py-32'>
-        <div className='space-y-10 xl:container xl:mx-auto xl:space-y-14'>
-          <h3
-            className={`${trajanPro.className} font-bold text-white text-2xl text-center md:text-4xl`}
-          >
-            WHAT OUR CUSTOMERS SAY
-          </h3>
-          <div className='grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3'>
-            {customerReviews.map((review, index) => (
-              <CustomerReviewCard key={index} {...review} />
-            ))}
+      <main>
+        <section className='w-full h-auto bg-[url("/ranch-bg.jpg")] bg-cover bg-center px-8 py-20 md:py-28 xl:px-0 xl:py-32'>
+          <div className='space-y-10 xl:container xl:mx-auto xl:space-y-14'>
+            <h3
+              className={`${trajanPro.className} font-bold text-white text-2xl text-center md:text-4xl`}
+            >
+              WHAT OUR CUSTOMERS SAY
+            </h3>
+            <div className='grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3'>
+              {customerReviews.map((review, index) => (
+                <CustomerReviewCard key={index} {...review} />
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </main>
     </Fragment>
   );
 }
