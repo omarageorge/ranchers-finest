@@ -56,10 +56,12 @@ export default function Home() {
           </div>
         </section>
         <section className='w-full h-auto bg-raven'>
-          <div className='w-full px-8 py-20 md:px-10 md:py-28 xl:px-20 xl:py-32 xl:container xl:mx-auto'>
+          <div className='w-full space-y-10 px-8 py-20 md:px-10 md:py-28 xl:px-20 xl:py-32 xl:container xl:mx-auto xl:space-y-14'>
             <h3 className={`${trajanPro.className} text-yellow text-center`}>
               OUR PRODUCTS
             </h3>
+
+            <div className=''></div>
           </div>
         </section>
         <section className='w-full h-auto bg-[url("/ranch-bg.jpg")] bg-cover bg-center px-8 py-20 md:px-10 md:py-28 xl:px-20 xl:py-32'>
