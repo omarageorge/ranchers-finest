@@ -42,6 +42,7 @@ const Navigation: React.FC = () => {
               >
                 <Link
                   href={link.url}
+                  target={link?.target && link.target}
                   className={`${trajanPro.className} block text-white text-lg group-hover:underline group-hover:underline-offset-8 group-hover:text-yellow lg:text-sm`}
                   onClick={() => setSideNavVisible(false)}
                 >
