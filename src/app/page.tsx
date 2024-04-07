@@ -50,11 +50,11 @@ export default function Home() {
                 promises a delicious experience in every bite.
               </p>
             </div>
-            <div className='hidden md:flex md:w-1/2 md:items-center justify-center'>
+            <div className='hidden md:flex md:w-1/2 md:items-center justify-center '>
               <Image
                 src={introImage}
                 alt='Sausages and Cold Cuts'
-                className='W-3/4 xl:w-[455px]'
+                className='W-3/4 xl:w-[580px]'
               />
             </div>
           </div>
