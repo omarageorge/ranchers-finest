@@ -22,7 +22,10 @@ const ProductCategory: React.FC<ProductCategoryProps> = ({
           <h4 className='font-normal text-2xl text-white uppercase'>{name}</h4>
           <p className='p1 text-whitish'>{description}</p>
         </div>
-        <Link href={url} className='font-semibold text-xl text-reddish'>
+        <Link
+          href={url}
+          className='font-semibold text-xl text-reddish hover:underline hover:underline-offset-8 transition-all duration-300 ease-in'
+        >
           SEE ALL
         </Link>
       </div>
