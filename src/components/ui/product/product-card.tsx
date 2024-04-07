@@ -3,7 +3,6 @@ import Image, { StaticImageData } from 'next/image';
 
 const ProductCard: React.FC<{
   name: string;
-  type: string;
   image: StaticImageData;
 }> = ({ name, image }) => {
   return (
