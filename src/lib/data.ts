@@ -1,4 +1,11 @@
-import { CustomerReview, SocialMedia } from '@/lib/definitions';
+import coldcuts from '@/assets/icons/cold-cuts.png';
+import meatcuts from '@/assets/icons/meat-cuts.png';
+import sausage from '@/assets/icons/sausage.png';
+import {
+  CustomerReview,
+  ProductCategory,
+  SocialMedia,
+} from '@/lib/definitions';
 import {
   FaFacebook,
   FaInstagram,
@@ -43,5 +50,29 @@ export const customerReviews: CustomerReview[] = [
     message:
       "I've been a loyal Ranchers Finest customer for months. The quality is always consistent, and I love trying their new flavors.  They never disappoint!",
     customer: 'Josephine N.',
+  },
+];
+
+export const productCategories: ProductCategory[] = [
+  {
+    icon: sausage,
+    name: 'Sausages',
+    description:
+      'A wide variety of sausages (Chicken, Pork, Beef, etc.) including specialty flavors, plus three types of bacon.',
+    url: '',
+  },
+  {
+    icon: coldcuts,
+    name: 'Cold Cuts',
+    description:
+      'Top-notch cold cuts (Salami, Ham, etc.) in Beef, Pork, Chicken, Lamb, and Goat for supermarkets, restaurants, and hotels.',
+    url: '',
+  },
+  {
+    icon: meatcuts,
+    name: 'Meat Cuts',
+    description:
+      'High-quality Beef, Chicken, and Pork cuts (Chops, Ribs, Steaks, etc.) for hotels and restaurants, meeting international standards.',
+    url: '',
   },
 ];
