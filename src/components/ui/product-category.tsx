@@ -24,7 +24,7 @@ const ProductCategory: React.FC<ProductCategoryProps> = ({
         </div>
         <Link
           href={url}
-          className='font-semibold text-xl text-reddish hover:underline hover:underline-offset-8 transition-all duration-300 ease-in'
+          className='font-semibold text-xl text-reddish hover:text-yellow hover:underline hover:underline-offset-8 transition-all duration-300 ease-in'
         >
           SEE ALL
         </Link>
