@@ -18,7 +18,7 @@ const ProductCategory: React.FC<ProductCategoryProps> = ({
     <div className='grid grid-cols-1 gap-6'>
       <Image src={icon} alt={name} className='w-24 mx-auto lg:w-34 h-auto' />
       <div className='text-center'>
-        <div className='h-44 space-y-3'>
+        <div className='h-44 lg:h-52 xl:h-36 space-y-3'>
           <h4 className='font-normal text-2xl text-white uppercase'>{name}</h4>
           <p className='p1 text-whitish'>{description}</p>
         </div>
