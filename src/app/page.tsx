@@ -58,11 +58,11 @@ export default function Home() {
           </div>
         </section>
         <section className='w-full h-auto bg-raven'>
-          <div className='w-full space-y-10 px-8 py-20 md:px-10 md:py-28 xl:px-20 xl:py-36 xl:container xl:mx-auto xl:space-y-28'>
+          <div className='w-full space-y-24 px-8 py-32 md:px-10 md:py-28 xl:px-20 xl:py-36 xl:container xl:mx-auto xl:space-y-28'>
             <h3 className={`${trajanPro.className} text-yellow text-center`}>
               OUR PRODUCTS
             </h3>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-8 xl:gap-12'>
+            <div className='grid grid-cols-1 gap-28 md:grid-cols-2 lg:grid-cols-3 lg:gap-4 xl:gap-24'>
               {productCategories.map((category, index) => (
                 <ProductCategory key={index} {...category} />
               ))}
@@ -83,7 +83,7 @@ export default function Home() {
               <h3
                 className={`${trajanPro.className} text-red text-center md:text-left`}
               >
-                WHY OUR CUSTOMERS CHOOSE Us
+                WHY CHOOSE Us?
               </h3>
               <Image
                 src={whyUs}
