@@ -1,5 +1,6 @@
 import { delius, proximaNova, trajanPro } from '@/app/fonts';
 import introImage from '@/assets/intro-image.png';
+import whyUs from '@/assets/why-us.png';
 import Carousel from '@/components/ui/carousel/carousel';
 import CustomerReviewCard from '@/components/ui/customer-review-card';
 import ProductCategory from '@/components/ui/product-category';
@@ -27,7 +28,7 @@ export default function Home() {
         </div>
       </header>
       <main>
-        <section className='w-full h-auto bg-white px-8 py-20 md:px-10 md:py-28 xl:px-20 xl:py-32'>
+        <section className='w-full h-auto bg-white px-8 py-20 md:px-10 md:py-28 xl:px-20 xl:py-36'>
           <div className='w-full flex flex-col md:flex-row md:items-center md:justify-evenly md:gap-2 xl:container xl:mx-auto'>
             <div className='space-y-10 md:space-y-6 xl:w-2/5'>
               <h3
@@ -57,18 +58,50 @@ export default function Home() {
           </div>
         </section>
         <section className='w-full h-auto bg-raven'>
-          <div className='w-full space-y-10 px-8 py-20 md:px-10 md:py-28 xl:px-20 xl:py-32 xl:container xl:mx-auto xl:space-y-28'>
+          <div className='w-full space-y-10 px-8 py-20 md:px-10 md:py-28 xl:px-20 xl:py-36 xl:container xl:mx-auto xl:space-y-28'>
             <h3 className={`${trajanPro.className} text-yellow text-center`}>
               OUR PRODUCTS
             </h3>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-8 xl:gap-12'>
               {productCategories.map((category, index) => (
                 <ProductCategory key={index} {...category} />
               ))}
             </div>
           </div>
         </section>
-        <section className='w-full h-auto bg-[url("/ranch-bg.jpg")] bg-cover bg-center px-8 py-20 md:px-10 md:py-28 xl:px-20 xl:py-32'>
+        <section className='w-full h-auto bg-gray'>
+          <div className='w-full flex flex-col px-8 py-20 md:flex-row md:items-center md:justify-evenly md:gap-10 md:px-10 md:py-28 xl:px-20 xl:py-36 xl:container xl:mx-auto'>
+            <div className='hidden md:flex md:w-1/2 md:items-center justify-center'>
+              <Image
+                src={whyUs}
+                alt='Sausages'
+                className='W-3/4 xl:w-[455px]'
+              />
+            </div>
+
+            <div className='w-full space-y-14 md:w-1/2 md:space-y-6 xl:w-[550px]'>
+              <h3
+                className={`${trajanPro.className} text-red text-center md:text-left`}
+              >
+                WHY OUR CUSTOMERS CHOOSE Us
+              </h3>
+              <Image
+                src={whyUs}
+                alt='Sausages'
+                className='w-2/3 mx-auto md:hidden'
+              />
+              <p
+                className={`${proximaNova.className} p1 font-light text-black text-center md:text-left`}
+              >
+                The difference in quality, flavor, and presentation makes
+                Ranchers Finest the clear choice for discerning customers. Our
+                commitment to quality ingredients and meticulous preparation
+                ensures every bite is simply delicious.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section className='w-full h-auto bg-[url("/ranch-bg.jpg")] bg-cover bg-center px-8 py-20 md:px-10 md:py-28 xl:px-20 xl:py-36'>
           <div className='space-y-10 xl:container xl:mx-auto xl:space-y-14'>
             <h3 className={`${trajanPro.className} text-white text-center`}>
               WHAT OUR CUSTOMERS SAY
