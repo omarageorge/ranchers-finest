@@ -2,7 +2,8 @@ import { delius, proximaNova, trajanPro } from '@/app/fonts';
 import introImage from '@/assets/intro-image.png';
 import Carousel from '@/components/ui/carousel/carousel';
 import CustomerReviewCard from '@/components/ui/customer-review-card';
-import { customerReviews } from '@/lib/data';
+import ProductCategory from '@/components/ui/product-category';
+import { customerReviews, productCategories } from '@/lib/data';
 import Image from 'next/image';
 import { Fragment } from 'react';
 
@@ -56,12 +57,15 @@ export default function Home() {
           </div>
         </section>
         <section className='w-full h-auto bg-raven'>
-          <div className='w-full space-y-10 px-8 py-20 md:px-10 md:py-28 xl:px-20 xl:py-32 xl:container xl:mx-auto xl:space-y-14'>
+          <div className='w-full space-y-10 px-8 py-20 md:px-10 md:py-28 xl:px-20 xl:py-32 xl:container xl:mx-auto xl:space-y-28'>
             <h3 className={`${trajanPro.className} text-yellow text-center`}>
               OUR PRODUCTS
             </h3>
-
-            <div className=''></div>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
+              {productCategories.map((category, index) => (
+                <ProductCategory key={index} {...category} />
+              ))}
+            </div>
           </div>
         </section>
         <section className='w-full h-auto bg-[url("/ranch-bg.jpg")] bg-cover bg-center px-8 py-20 md:px-10 md:py-28 xl:px-20 xl:py-32'>
