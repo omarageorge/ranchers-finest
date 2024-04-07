@@ -16,3 +16,9 @@ export type ProductCategory = {
   description: string;
   url: string;
 };
+
+export type Product = {
+  name: string;
+  type: string;
+  image: StaticImageData;
+};
