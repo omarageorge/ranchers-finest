@@ -1,8 +1,17 @@
 import coldcuts from '@/assets/icons/cold-cuts.png';
 import meatcuts from '@/assets/icons/meat-cuts.png';
 import sausage from '@/assets/icons/sausage.png';
+import BeefBugger from '@/assets/Products/meatcuts/Beef_Burger_Patties.webp';
+import BeefCubes from '@/assets/Products/meatcuts/Beef_Cubes_500g.webp';
+import ChickenDrumsticks from '@/assets/Products/meatcuts/Chicken_Drumsticks_1kg.webp';
+import ChickenFillet from '@/assets/Products/meatcuts/Chicken_Fillet_1kg.webp';
+import ChickenLegs from '@/assets/Products/meatcuts/Chicken_Legs_1kg.webp';
+import ChickenThighs from '@/assets/Products/meatcuts/Chicken_Thighs_1kg.webp';
+import ChickenWings from '@/assets/Products/meatcuts/Chicken_Wings_1kg.webp';
+
 import {
   CustomerReview,
+  Product,
   ProductCategory,
   SocialMedia,
 } from '@/lib/definitions';
@@ -74,5 +83,43 @@ export const productCategories: ProductCategory[] = [
     description:
       'High-quality Beef, Chicken, and Pork cuts (Chops, Ribs, Steaks, etc.) for hotels and restaurants, meeting international standards.',
     url: '',
+  },
+];
+
+export const meatCuts: Product[] = [
+  {
+    name: 'Chicken Drumsticks',
+    type: 'meatcuts',
+    image: ChickenDrumsticks,
+  },
+  {
+    name: 'Chicken Fillet',
+    type: 'meatcuts',
+    image: ChickenFillet,
+  },
+  {
+    name: 'Chicken Legs',
+    type: 'meatcuts',
+    image: ChickenLegs,
+  },
+  {
+    name: 'Chicken Thighs',
+    type: 'meatcuts',
+    image: ChickenThighs,
+  },
+  {
+    name: 'Chicken Wings',
+    type: 'meatcuts',
+    image: ChickenWings,
+  },
+  {
+    name: 'Beef Cubes',
+    type: 'meatcuts',
+    image: BeefCubes,
+  },
+  {
+    name: 'Beef Burgers',
+    type: 'meatcuts',
+    image: BeefBugger,
   },
 ];
