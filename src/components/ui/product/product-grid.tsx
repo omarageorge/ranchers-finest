@@ -1,5 +1,5 @@
+import ProductCard from '@/components/ui/product/product-card';
 import { Product } from '@/lib/definitions';
-import ProductCard from './product-card';
 
 const ProductGrid: React.FC<{
   products: Product[];
