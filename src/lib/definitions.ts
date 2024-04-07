@@ -19,6 +19,5 @@ export type ProductCategory = {
 
 export type Product = {
   name: string;
-  type: string;
   image: StaticImageData;
 };
