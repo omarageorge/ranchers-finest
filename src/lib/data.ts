@@ -1,26 +1,32 @@
 import coldcuts from '@/assets/icons/cold-cuts.png';
 import meatcuts from '@/assets/icons/meat-cuts.png';
 import sausage from '@/assets/icons/sausage.png';
+
 import BackBacon from '@/assets/Products/coldcuts/Back_Bacon_200g.webp';
 import SandwichHam from '@/assets/Products/coldcuts/Sandwich_Ham_200g.webp';
 import StreakyBacon from '@/assets/Products/coldcuts/Streaky_Bacon_200g.webp';
+
 import BeefBugger from '@/assets/Products/meatcuts/Beef_Burger_Patties.webp';
 import BeefCubes from '@/assets/Products/meatcuts/Beef_Cubes_500g.webp';
 import ChickenDrumsticks from '@/assets/Products/meatcuts/Chicken_Drumsticks_1kg.webp';
+
 import ChickenFillet from '@/assets/Products/meatcuts/Chicken_Fillet_1kg.webp';
 import ChickenLegs from '@/assets/Products/meatcuts/Chicken_Legs_1kg.webp';
 import ChickenThighs from '@/assets/Products/meatcuts/Chicken_Thighs_1kg.webp';
 import ChickenWings from '@/assets/Products/meatcuts/Chicken_Wings_1kg.webp';
-import BeefBBQgs from '@/assets/Products/sausages/Beef/BBQ_Beef_500g.webp';
-import BeefBBQkg from '@/assets/Products/sausages/Beef/Beef_BBQ_1kg.webp';
-import BreakfastBeefgs from '@/assets/Products/sausages/Beef/Beef_Breakfast_350g.webp';
-import BeefHotDogs from '@/assets/Products/sausages/Beef/Beef_Hot_Dogs_1kg.webp';
-import EnglishBeefkg from '@/assets/Products/sausages/Beef/English_Style_Beef_1kg.webp';
+
+import BBQ_Beef_500g from '@/assets/Products/sausages/Beef/BBQ_Beef_500g.webp';
+import Beef_BBQ_1kg from '@/assets/Products/sausages/Beef/Beef_BBQ_1kg.webp';
+import Beef_Breakfast_350g from '@/assets/Products/sausages/Beef/Beef_Breakfast_350g.webp';
+import Beef_Hot_Dogs_1kg from '@/assets/Products/sausages/Beef/Beef_Hot_Dogs_1kg.webp';
+import English_Style_Beef_1kg from '@/assets/Products/sausages/Beef/English_Style_Beef_1kg.webp';
 import EnglishBeefgs from '@/assets/Products/sausages/Beef/English_Style_Beef_500g.webp';
 import SmokedBeef from '@/assets/Products/sausages/Beef/Traditional_Smoked_Beef.webp';
+
 import BreakfastChicken7gs from '@/assets/Products/sausages/Chicken/Breakfast_Chicken_700g.webp';
 import BreakfastChickengs from '@/assets/Products/sausages/Chicken/Chicken_Breakfast_350g.webp';
 import EnglishChickenkg from '@/assets/Products/sausages/Chicken/English_Style_Chicken_1kg.jpg';
+
 import EnglishStylePorkkg from '@/assets/Products/sausages/Pork/English_Style_Pork_1kg.webp';
 import EnglishStylePorkgs from '@/assets/Products/sausages/Pork/English_Style_Pork_500g.webp';
 import PorkBBQkg from '@/assets/Products/sausages/Pork/Pork_BBQ_1kg.webp';
@@ -122,19 +128,19 @@ export const coldCuts: Product[] = [
 ];
 
 export const beefSausages: Product[] = [
-  { name: 'Beef BBQ 1kg', image: BeefBBQkg },
-  { name: 'Beef BBQ 500g', image: BeefBBQgs },
-  { name: 'Breakfast Beef 500G', image: BreakfastBeefgs },
-  { name: 'Beef Hot Dogs', image: BeefHotDogs },
-  { name: 'English Beef 1kg', image: EnglishBeefkg },
+  { name: 'Beef BBQ 1kg', image: Beef_BBQ_1kg },
+  { name: 'Beef BBQ 500g', image: BBQ_Beef_500g },
+  { name: 'Breakfast Beef 500G', image: Beef_Breakfast_350g },
+  { name: 'Beef Hot Dogs', image: Beef_Hot_Dogs_1kg },
+  { name: 'English Beef 1kg', image: English_Style_Beef_1kg },
   { name: 'English Beef 500g', image: EnglishBeefgs },
   { name: 'Traditional Smoked Beef', image: SmokedBeef },
 ];
 
 export const chickenSausages: Product[] = [
+  { name: 'English Chicken 1kg', image: EnglishChickenkg },
   { name: 'Breakfast Chicken 700g', image: BreakfastChicken7gs },
   { name: 'Breakfast Chicken 350g', image: BreakfastChickengs },
-  { name: 'English Chicken 1kg', image: EnglishChickenkg },
 ];
 
 export const porkSausages: Product[] = [
