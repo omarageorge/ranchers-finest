@@ -1,18 +1,23 @@
 import heroMeat from '@/assets/hero/hero-meat.jpg';
 import HeroSection from '@/components/ui/hero-section';
-import ProductGrid from '@/components/ui/product/product-grid';
-import { meatCuts } from '@/lib/data';
+import ProductGrid, {
+  GridContainer,
+} from '@/components/ui/product/product-grid';
+import { chickenSausages, coldCuts, meatCuts, porkSausages } from '@/lib/data';
 
 import { Fragment } from 'react';
-function Product() {
+function Products() {
   return (
     <Fragment>
-      <HeroSection title='Meat CUTS' image={heroMeat} />
-      <main className='w-full h-auto bg-white'>
-        <ProductGrid products={meatCuts} />
-      </main>
+      <HeroSection title='OUR PRODUCTS' image={heroMeat} />
+      <GridContainer>
+        <ProductGrid products={meatCuts} title='Meant' />
+        <ProductGrid products={coldCuts} title='Cold Cuts' />
+        <ProductGrid products={chickenSausages} title='Chicken Sausages' />
+        <ProductGrid products={porkSausages} title='Pork Sausages' />
+      </GridContainer>
     </Fragment>
   );
 }
 
-export default Product;
+export default Products;
