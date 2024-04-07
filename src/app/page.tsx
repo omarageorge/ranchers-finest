@@ -28,21 +28,21 @@ export default function Home() {
         </div>
       </header>
       <main>
-        <section className='w-full h-auto bg-white px-8 py-20 md:px-10 md:py-28 xl:px-20 xl:py-36'>
-          <div className='w-full flex flex-col md:flex-row md:items-center md:justify-evenly md:gap-2 xl:container xl:mx-auto'>
-            <div className='space-y-10 md:space-y-6 xl:w-2/5'>
+        <section className='w-full h-auto bg-white'>
+          <div className='w-full flex flex-col px-8 py-20 md:flex-row md:items-center md:justify-evenly md:gap-10 md:px-10 md:py-28 xl:px-20 xl:py-36 xl:container xl:mx-auto xl:gap-0'>
+            <div className='w-full space-y-14 md:w-1/2 md:space-y-6 xl:w-[550px]'>
               <h3
-                className={`${trajanPro.className} text-center text-red md:text-left`}
+                className={`${trajanPro.className} text-red text-center md:text-left`}
               >
                 Kampala&lsquo;s Premier Sausages & Processed Meats
               </h3>
               <Image
                 src={introImage}
                 alt='Sausages and Cold Cuts'
-                className='block mx-auto w-58 h-auto md:hidden'
+                className='w-3/4 mx-auto md:hidden'
               />
               <p
-                className={`${proximaNova.className} text-black p1 text-center md:text-left`}
+                className={`${proximaNova.className} p1 font-light text-black text-center md:text-left`}
               >
                 Experience the finest sausages, cold cuts, and fresh meats
                 expertly crafted at our state-of-the-art facility in Kampala.
@@ -50,11 +50,13 @@ export default function Home() {
                 promises a delicious experience in every bite.
               </p>
             </div>
-            <Image
-              src={introImage}
-              alt='Sausages and Cold Cuts'
-              className='hidden md:block md:w-1/2 xl:w-2/5'
-            />
+            <div className='hidden md:flex md:w-1/2 md:items-center justify-center'>
+              <Image
+                src={introImage}
+                alt='Sausages and Cold Cuts'
+                className='W-3/4 xl:w-[455px]'
+              />
+            </div>
           </div>
         </section>
         <section className='w-full h-auto bg-raven'>
