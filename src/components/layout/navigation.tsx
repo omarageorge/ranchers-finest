@@ -3,15 +3,36 @@
 import { trajanPro } from '@/app/fonts';
 import logo from '@/assets/logo.png';
 import { socialMedia } from '@/lib/data';
-import linkData from '@/lib/nav-links';
+import linkData, { ILinkData } from '@/lib/nav-links';
 import clsx from 'clsx';
 import Image from 'next/image';
 import Link from 'next/link';
 import { createElement, useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { IoMdArrowDropdown } from 'react-icons/io';
 
 const Navigation: React.FC = () => {
   const [sideNavVisible, setSideNavVisible] = useState(false);
+
+  // Helper function for rendering sub links
+  const renderSubLinks = (links: ILinkData[]) => (
+    <ul className='hidden w-full xl:w-36 xl:absolute bg-reddish bg-opacity-50 group-hover:block  xl:rounded-sm xl:overflow-hidden'>
+      {links.map((subLink) => (
+        <li
+          key={subLink.title}
+          className='flex items-center justify-left px-2 py-3 xl:bg-transparent xl:hover:bg-black'
+        >
+          <Link
+            href={subLink.url}
+            className='font-thin text-base text-center text-white'
+            onClick={() => setSideNavVisible(false)}
+          >
+            {subLink.title}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
 
   return (
     <nav className='w-full h-20 flex items-center bg-black md:h-24 lg:h-32'>
@@ -46,8 +67,17 @@ const Navigation: React.FC = () => {
                   className={`${trajanPro.className} block text-white text-lg group-hover:underline group-hover:underline-offset-8 group-hover:text-yellow lg:text-sm`}
                   onClick={() => setSideNavVisible(false)}
                 >
-                  {link.title}
+                  {link?.subLinks ? (
+                    <span className='flex items-start'>
+                      {link.title} <IoMdArrowDropdown size={20} />
+                    </span>
+                  ) : (
+                    link.title
+                  )}
                 </Link>
+
+                {/* Sub links */}
+                {link?.subLinks && renderSubLinks(link.subLinks)}
               </li>
             ))}
           </ul>
