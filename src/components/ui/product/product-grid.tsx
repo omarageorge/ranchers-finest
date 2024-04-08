@@ -2,12 +2,15 @@ import { trajanPro } from '@/app/fonts';
 import ProductCard from '@/components/ui/product/product-card';
 import { Product } from '@/lib/definitions';
 import clsx from 'clsx';
+import Link from 'next/link';
 import { Fragment } from 'react';
+import { FaCartPlus } from 'react-icons/fa6';
 
 const ProductGrid: React.FC<{
   products: Product[];
   title?: string;
-}> = ({ products, title }) => {
+  purchaseUrl: string;
+}> = ({ products, title, purchaseUrl }) => {
   return (
     <Fragment>
       {title && (
@@ -22,6 +25,16 @@ const ProductGrid: React.FC<{
         {products.map((product) => (
           <ProductCard key={product.name} {...product} />
         ))}
+      </div>
+      <div className='w-full flex items-center justify-center pt-8'>
+        <Link
+          href={purchaseUrl}
+          target='_blank'
+          className='flex items-center justify-center gap-x-2 bg-red rounded-md px-6 py-4 font-bold text-white'
+        >
+          <FaCartPlus size={30} />
+          <p>BUY NOW</p>
+        </Link>
       </div>
     </Fragment>
   );

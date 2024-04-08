@@ -11,9 +11,21 @@ function Sausages() {
     <Fragment>
       <HeroSection title='Sausages' image={heroSausages} />
       <GridContainer>
-        <ProductGrid products={beefSausages} title='Beef Sausages' />
-        <ProductGrid products={porkSausages} title='Pork Sausages' />
-        <ProductGrid products={chickenSausages} title='Chicken Sausages' />
+        <ProductGrid
+          products={beefSausages.products}
+          title='Beef Sausages'
+          purchaseUrl={beefSausages.purchaseUrl}
+        />
+        <ProductGrid
+          products={porkSausages.products}
+          title='Pork Sausages'
+          purchaseUrl={porkSausages.purchaseUrl}
+        />
+        <ProductGrid
+          products={chickenSausages.products}
+          title='Chicken Sausages'
+          purchaseUrl={chickenSausages.purchaseUrl}
+        />
       </GridContainer>
     </Fragment>
   );

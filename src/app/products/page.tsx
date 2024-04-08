@@ -7,7 +7,7 @@ import {
   beefSausages,
   chickenSausages,
   coldCuts,
-  meatCuts,
+  frozenCuts,
   porkSausages,
 } from '@/lib/data';
 import { Fragment } from 'react';
@@ -17,11 +17,31 @@ function Products() {
     <Fragment>
       <HeroSection title='OUR PRODUCTS' image={heroMeat} />
       <GridContainer>
-        <ProductGrid products={beefSausages} title='Beef Sausages' />
-        <ProductGrid products={porkSausages} title='Pork Sausages' />
-        <ProductGrid products={chickenSausages} title='Chicken Sausages' />
-        <ProductGrid products={meatCuts} title='Frozen Cuts' />
-        <ProductGrid products={coldCuts} title='Cold Cuts' />
+        <ProductGrid
+          products={beefSausages.products}
+          title='Beef Sausages'
+          purchaseUrl={beefSausages.purchaseUrl}
+        />
+        <ProductGrid
+          products={porkSausages.products}
+          title='Pork Sausages'
+          purchaseUrl={porkSausages.purchaseUrl}
+        />
+        <ProductGrid
+          products={chickenSausages.products}
+          title='Chicken Sausages'
+          purchaseUrl={chickenSausages.purchaseUrl}
+        />
+        <ProductGrid
+          products={frozenCuts.products}
+          title='Frozen Cuts'
+          purchaseUrl={chickenSausages.purchaseUrl}
+        />
+        <ProductGrid
+          products={coldCuts.products}
+          title='Cold Cuts'
+          purchaseUrl={coldCuts.purchaseUrl}
+        />
       </GridContainer>
     </Fragment>
   );

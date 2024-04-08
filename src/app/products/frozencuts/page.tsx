@@ -3,7 +3,7 @@ import HeroSection from '@/components/ui/hero-section';
 import ProductGrid, {
   GridContainer,
 } from '@/components/ui/product/product-grid';
-import { meatCuts } from '@/lib/data';
+import { frozenCuts } from '@/lib/data';
 import { Fragment } from 'react';
 
 function FrozenCuts() {
@@ -11,7 +11,10 @@ function FrozenCuts() {
     <Fragment>
       <HeroSection title='Frozen Cuts' image={heroMeat} />
       <GridContainer padding>
-        <ProductGrid products={meatCuts} />
+        <ProductGrid
+          products={frozenCuts.products}
+          purchaseUrl={frozenCuts.purchaseUrl}
+        />
       </GridContainer>
     </Fragment>
   );
