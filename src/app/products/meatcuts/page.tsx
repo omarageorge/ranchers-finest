@@ -10,7 +10,7 @@ function MeatCuts() {
   return (
     <Fragment>
       <HeroSection title='Meat Cuts' image={heroMeat} />
-      <GridContainer>
+      <GridContainer padding>
         <ProductGrid products={meatCuts} />
       </GridContainer>
     </Fragment>

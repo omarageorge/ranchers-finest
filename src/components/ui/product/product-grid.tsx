@@ -11,7 +11,9 @@ const ProductGrid: React.FC<{
   return (
     <Fragment>
       {title && (
-        <h3 className={`${trajanPro.className} text-center text-raven py-20`}>
+        <h3
+          className={`${trajanPro.className} text-center text-raven py-20 md:py-28`}
+        >
           {title}
         </h3>
       )}
