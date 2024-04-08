@@ -3,7 +3,7 @@
 import { trajanPro } from '@/app/fonts';
 import logo from '@/assets/logo.png';
 import { socialMedia } from '@/lib/data';
-import linkData, { ILinkData } from '@/lib/nav-links';
+import linkData from '@/lib/nav-links';
 import clsx from 'clsx';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -12,27 +12,7 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import { IoMdArrowDropdown } from 'react-icons/io';
 
 const Navigation: React.FC = () => {
-  const [sideNavVisible, setSideNavVisible] = useState(false);
-
-  // Helper function for rendering sub links
-  const renderSubLinks = (links: ILinkData[]) => (
-    <ul className='hidden w-full xl:w-36 xl:absolute bg-reddish bg-opacity-50 group-hover:block  xl:rounded-sm xl:overflow-hidden'>
-      {links.map((subLink) => (
-        <li
-          key={subLink.title}
-          className='flex items-center justify-left px-2 py-3 xl:bg-transparent xl:hover:bg-black'
-        >
-          <Link
-            href={subLink.url}
-            className='font-thin text-base text-center text-white'
-            onClick={() => setSideNavVisible(false)}
-          >
-            {subLink.title}
-          </Link>
-        </li>
-      ))}
-    </ul>
-  );
+  const [sideNavVisible, setSideNavVisible] = useState(true);
 
   return (
     <nav className='w-full h-20 flex items-center bg-black md:h-24 lg:h-32'>
@@ -64,8 +44,7 @@ const Navigation: React.FC = () => {
                 <Link
                   href={link.url}
                   target={link?.target && link.target}
-                  className={`${trajanPro.className} block text-white text-lg group-hover:underline group-hover:underline-offset-8 group-hover:text-yellow lg:text-sm`}
-                  onClick={() => setSideNavVisible(false)}
+                  className={`${trajanPro.className} block text-white text-lg lg:text-sm`}
                 >
                   {link?.subLinks ? (
                     <span className='flex items-start'>
@@ -76,8 +55,20 @@ const Navigation: React.FC = () => {
                   )}
                 </Link>
 
-                {/* Sub links */}
-                {link?.subLinks && renderSubLinks(link.subLinks)}
+                {link?.subLinks && (
+                  <ul className='hidden w-full bg-raven rounded-md text-white group-focus-within:block xl:absolute xl:w-fit xl:bg-opacity-85 xl:rounded-sm'>
+                    {link.subLinks.map((subLink) => (
+                      <li key={subLink.title} className='w-full'>
+                        <Link
+                          href={subLink.url}
+                          className={`${trajanPro.className} block px-6 py-2 text-sm xl:py-4 xl:hover:bg-black xl:hover:text-yellow`}
+                        >
+                          {subLink.title}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </li>
             ))}
           </ul>
