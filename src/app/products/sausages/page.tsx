@@ -3,7 +3,7 @@ import HeroSection from '@/components/ui/hero-section';
 import ProductGrid, {
   GridContainer,
 } from '@/components/ui/product/product-grid';
-import { chickenSausages, porkSausages } from '@/lib/data';
+import { beefSausages, chickenSausages, porkSausages } from '@/lib/data';
 import { Fragment } from 'react';
 
 function Sausages() {
@@ -11,8 +11,9 @@ function Sausages() {
     <Fragment>
       <HeroSection title='Sausages' image={heroSausages} />
       <GridContainer>
-        <ProductGrid products={chickenSausages} title='Chicken Sausages' />
+        <ProductGrid products={beefSausages} title='Beef Sausages' />
         <ProductGrid products={porkSausages} title='Pork Sausages' />
+        <ProductGrid products={chickenSausages} title='Chicken Sausages' />
       </GridContainer>
     </Fragment>
   );

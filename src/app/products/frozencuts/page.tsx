@@ -6,10 +6,10 @@ import ProductGrid, {
 import { meatCuts } from '@/lib/data';
 import { Fragment } from 'react';
 
-function MeatCuts() {
+function FrozenCuts() {
   return (
     <Fragment>
-      <HeroSection title='Meat Cuts' image={heroMeat} />
+      <HeroSection title='Frozen Cuts' image={heroMeat} />
       <GridContainer padding>
         <ProductGrid products={meatCuts} />
       </GridContainer>
@@ -17,4 +17,4 @@ function MeatCuts() {
   );
 }
 
-export default MeatCuts;
+export default FrozenCuts;

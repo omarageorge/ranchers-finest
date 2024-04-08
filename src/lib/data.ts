@@ -1,5 +1,5 @@
 import coldcuts from '@/assets/icons/cold-cuts.png';
-import meatcuts from '@/assets/icons/meat-cuts.png';
+import frozencuts from '@/assets/icons/frozen-cuts.png';
 import sausage from '@/assets/icons/sausage.png';
 
 import BackBacon from '@/assets/Products/coldcuts/Back_Bacon_200g.webp';
@@ -93,21 +93,21 @@ export const productCategories: ProductCategory[] = [
     name: 'Sausages',
     description:
       'A wide variety of sausages (Chicken, Pork, Beef, etc.) including specialty flavors, plus three types of bacon.',
-    url: '',
+    url: '/products/sausages',
   },
   {
     icon: coldcuts,
     name: 'Cold Cuts',
     description:
       'Top-notch cold cuts (Salami, Ham, etc.) in Beef, Pork, Chicken, Lamb, and Goat for supermarkets, restaurants, and hotels.',
-    url: '',
+    url: '/products/coldcuts',
   },
   {
-    icon: meatcuts,
-    name: 'Meat Cuts',
+    icon: frozencuts,
+    name: 'Frozen Cuts',
     description:
       'High-quality Beef, Chicken, and Pork cuts (Chops, Ribs, Steaks, etc.) for hotels and restaurants, meeting international standards.',
-    url: '',
+    url: '/products/frozencuts',
   },
 ];
 
