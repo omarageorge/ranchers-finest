@@ -39,52 +39,39 @@ const Navigation: React.FC = () => {
             {linkData.map((link) => (
               <li
                 key={link.title}
-                className='border-b border-b-white py-3 px-6 transition-all duration-200 ease-in xl:border-b-0 xl:p-0 group'
+                className='border-b border-b-white py-3 px-6 transition-all duration-200 ease-in xl:border-b-0 xl:p-0'
               >
-                {/* Mobile */}
-                <Link
-                  href={link.url}
-                  target={link?.target && link.target}
-                  className={`${trajanPro.className} block text-white text-lg lg:text-sm xl:hidden`}
-                >
-                  {link?.subLinks ? (
-                    <span className='flex items-start'>
+                {link.subLinks ? (
+                  <div className='group'>
+                    <a
+                      className={`${trajanPro.className} flex items-start text-white text-lg lg:text-sm cursor-pointer group-hover:text-yellow `}
+                    >
                       {link.title} <IoMdArrowDropdown size={20} />
-                    </span>
-                  ) : (
-                    link.title
-                  )}
-                </Link>
+                    </a>
 
-                {/* Large screen */}
-                <Link
-                  href={link.url}
-                  target={link?.target && link.target}
-                  className={`${trajanPro.className} hidden  text-white text-lg lg:text-sm xl:block`}
-                >
-                  {link?.subLinks ? (
-                    <span className='flex items-start'>
-                      {link.title} <IoMdArrowDropdown size={20} />
-                    </span>
-                  ) : (
-                    link.title
-                  )}
-                </Link>
-
-                {link?.subLinks && (
-                  <ul className='hidden w-full bg-raven rounded-md text-white group-focus-within:block xl:absolute xl:w-fit xl:bg-opacity-85 xl:rounded-sm'>
-                    {link.subLinks.map((subLink) => (
-                      <li key={subLink.title} className='w-full'>
-                        <Link
-                          href={subLink.url}
-                          className={`${trajanPro.className} block px-6 py-2 text-sm xl:py-4 xl:hover:bg-black xl:hover:text-yellow`}
-                          onClick={() => setSideNavVisible(false)}
-                        >
-                          {subLink.title}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
+                    <ul className='hidden group-hover:block w-full bg-raven rounded-md text-white xl:absolute xl:w-fit xl:bg-opacity-85 xl:rounded-sm'>
+                      {link.subLinks.map((subLink) => (
+                        <li key={subLink.title} className='w-full'>
+                          <Link
+                            href={subLink.url}
+                            className={`${trajanPro.className} block px-6 py-2 text-sm xl:py-4 xl:hover:bg-black xl:hover:text-yellow`}
+                            onClick={() => setSideNavVisible(false)}
+                          >
+                            {subLink.title}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ) : (
+                  <Link
+                    href={link.url}
+                    target={link?.target && link.target}
+                    className={`${trajanPro.className} block text-white text-lg lg:text-sm hover:text-yellow`}
+                    onClick={() => setSideNavVisible(false)}
+                  >
+                    {link.title}
+                  </Link>
                 )}
               </li>
             ))}
