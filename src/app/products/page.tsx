@@ -1,4 +1,4 @@
-import heroMeat from '@/assets/hero/hero-meat.jpg';
+import heroProducts from '@/assets/hero/hero-products.jpg';
 import HeroSection from '@/components/ui/hero-section';
 import ProductGrid, {
   GridContainer,
@@ -15,7 +15,7 @@ import { Fragment } from 'react';
 function Products() {
   return (
     <Fragment>
-      <HeroSection title='OUR PRODUCTS' image={heroMeat} />
+      <HeroSection title='OUR PRODUCTS' image={heroProducts} />
       <GridContainer>
         <ProductGrid
           products={beefSausages.products}
