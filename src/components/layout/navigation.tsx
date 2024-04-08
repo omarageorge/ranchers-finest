@@ -41,10 +41,26 @@ const Navigation: React.FC = () => {
                 key={link.title}
                 className='border-b border-b-white py-3 px-6 transition-all duration-200 ease-in xl:border-b-0 xl:p-0 group'
               >
+                {/* Mobile */}
                 <Link
                   href={link.url}
                   target={link?.target && link.target}
-                  className={`${trajanPro.className} block text-white text-lg lg:text-sm`}
+                  className={`${trajanPro.className} block text-white text-lg lg:text-sm xl:hidden`}
+                >
+                  {link?.subLinks ? (
+                    <span className='flex items-start'>
+                      {link.title} <IoMdArrowDropdown size={20} />
+                    </span>
+                  ) : (
+                    link.title
+                  )}
+                </Link>
+
+                {/* Large screen */}
+                <Link
+                  href={link.url}
+                  target={link?.target && link.target}
+                  className={`${trajanPro.className} hidden  text-white text-lg lg:text-sm xl:block`}
                 >
                   {link?.subLinks ? (
                     <span className='flex items-start'>
@@ -62,6 +78,7 @@ const Navigation: React.FC = () => {
                         <Link
                           href={subLink.url}
                           className={`${trajanPro.className} block px-6 py-2 text-sm xl:py-4 xl:hover:bg-black xl:hover:text-yellow`}
+                          onClick={() => setSideNavVisible(false)}
                         >
                           {subLink.title}
                         </Link>
