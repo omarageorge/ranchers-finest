@@ -21,3 +21,8 @@ export type Product = {
   name: string;
   image: StaticImageData;
 };
+
+export type ProductData = {
+  purchaseUrl: string;
+  products: Product[];
+};

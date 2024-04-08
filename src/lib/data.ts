@@ -36,8 +36,8 @@ import PorkHotDogskg from '@/assets/Products/sausages/Pork/Pork_Hot_Dogs_1kg.web
 
 import {
   CustomerReview,
-  Product,
   ProductCategory,
+  ProductData,
   SocialMedia,
 } from '@/lib/definitions';
 import {
@@ -52,6 +52,88 @@ export const socialMedia: SocialMedia[] = [
   { url: 'https://twitter.com/ranchersfinest', icon: FaXTwitter },
   { url: 'https://www.instagram.com/ranchers.finest/', icon: FaInstagram },
   { url: 'https://www.facebook.com/ranchersfinest', icon: FaFacebook },
+];
+
+export const frozenCuts: ProductData = {
+  purchaseUrl: 'https://legourmetkampala.com/collections/frozen-cuts',
+  products: [
+    { name: 'Chicken Drumsticks', image: ChickenDrumsticks },
+    { name: 'Chicken Fillet', image: ChickenFillet },
+    { name: 'Chicken Legs', image: ChickenLegs },
+    { name: 'Chicken Thighs', image: ChickenThighs },
+    { name: 'Chicken Wings', image: ChickenWings },
+    { name: 'Beef Cubes', image: BeefCubes },
+    { name: 'Beef Burgers', image: BeefBugger },
+  ],
+};
+
+export const coldCuts: ProductData = {
+  purchaseUrl: 'https://legourmetkampala.com/collections/cold-cuts',
+  products: [
+    { name: 'Back Bacon', image: BackBacon },
+    { name: 'Sandwich Ham', image: SandwichHam },
+    { name: 'Streaky Bacon', image: StreakyBacon },
+  ],
+};
+
+export const beefSausages: ProductData = {
+  purchaseUrl:
+    'https://legourmetkampala.com/collections/ranchers-finest-beef-sausages-1',
+  products: [
+    { name: 'Beef BBQ 1kg', image: Beef_BBQ_1kg },
+    { name: 'Beef BBQ 500g', image: BBQ_Beef_500g },
+    { name: 'Breakfast Beef 500G', image: Beef_Breakfast_350g },
+    { name: 'Beef Hot Dogs', image: Beef_Hot_Dogs_1kg },
+    { name: 'English Beef 1kg', image: English_Style_Beef_1kg },
+    { name: 'English Beef 500g', image: EnglishBeefgs },
+    { name: 'Traditional Smoked Beef', image: SmokedBeef },
+  ],
+};
+export const chickenSausages: ProductData = {
+  purchaseUrl:
+    'https://legourmetkampala.com/collections/ranchers-finest-chicken-sausages-1',
+  products: [
+    { name: 'English Chicken 1kg', image: EnglishChickenkg },
+    { name: 'Breakfast Chicken 700g', image: BreakfastChicken7gs },
+    { name: 'Breakfast Chicken 350g', image: BreakfastChickengs },
+  ],
+};
+
+export const porkSausages: ProductData = {
+  purchaseUrl:
+    'https://legourmetkampala.com/collections/ranchers-finest-pork-sausages-1',
+  products: [
+    { name: 'English Style Pork 1kg', image: EnglishStylePorkkg },
+    { name: 'English Style Pork 500g', image: EnglishStylePorkgs },
+    { name: 'Pork BBQ 1kg', image: PorkBBQkg },
+    { name: 'Pork BBQ 500g', image: PorkBBQgs },
+    { name: 'Pork Breakfast 700g', image: PorkBreakfast7gs },
+    { name: 'Pork Hot Dogs 1kg', image: PorkHotDogskg },
+  ],
+};
+
+export const productCategories: ProductCategory[] = [
+  {
+    icon: sausage,
+    name: 'Sausages',
+    description:
+      'A wide variety of sausages (Chicken, Pork, Beef, etc.) including specialty flavors, plus three types of bacon.',
+    url: '/products/sausages',
+  },
+  {
+    icon: coldcuts,
+    name: 'Cold Cuts',
+    description:
+      'Top-notch cold cuts (Salami, Ham, etc.) in Beef, Pork, Chicken, Lamb, and Goat for supermarkets, restaurants, and hotels.',
+    url: '/products/coldcuts',
+  },
+  {
+    icon: frozencuts,
+    name: 'Frozen Cuts',
+    description:
+      'High-quality Beef, Chicken, and Pork cuts (Chops, Ribs, Steaks, etc.) for hotels and restaurants, meeting international standards.',
+    url: '/products/frozencuts',
+  },
 ];
 
 export const customerReviews: CustomerReview[] = [
@@ -85,69 +167,4 @@ export const customerReviews: CustomerReview[] = [
       "I've been a loyal Ranchers Finest customer for months. The quality is always consistent, and I love trying their new flavors.  They never disappoint!",
     customer: 'Josephine N.',
   },
-];
-
-export const productCategories: ProductCategory[] = [
-  {
-    icon: sausage,
-    name: 'Sausages',
-    description:
-      'A wide variety of sausages (Chicken, Pork, Beef, etc.) including specialty flavors, plus three types of bacon.',
-    url: '/products/sausages',
-  },
-  {
-    icon: coldcuts,
-    name: 'Cold Cuts',
-    description:
-      'Top-notch cold cuts (Salami, Ham, etc.) in Beef, Pork, Chicken, Lamb, and Goat for supermarkets, restaurants, and hotels.',
-    url: '/products/coldcuts',
-  },
-  {
-    icon: frozencuts,
-    name: 'Frozen Cuts',
-    description:
-      'High-quality Beef, Chicken, and Pork cuts (Chops, Ribs, Steaks, etc.) for hotels and restaurants, meeting international standards.',
-    url: '/products/frozencuts',
-  },
-];
-
-export const meatCuts: Product[] = [
-  { name: 'Chicken Drumsticks', image: ChickenDrumsticks },
-  { name: 'Chicken Fillet', image: ChickenFillet },
-  { name: 'Chicken Legs', image: ChickenLegs },
-  { name: 'Chicken Thighs', image: ChickenThighs },
-  { name: 'Chicken Wings', image: ChickenWings },
-  { name: 'Beef Cubes', image: BeefCubes },
-  { name: 'Beef Burgers', image: BeefBugger },
-];
-
-export const coldCuts: Product[] = [
-  { name: 'Back Bacon', image: BackBacon },
-  { name: 'Sandwich Ham', image: SandwichHam },
-  { name: 'Streaky Bacon', image: StreakyBacon },
-];
-
-export const beefSausages: Product[] = [
-  { name: 'Beef BBQ 1kg', image: Beef_BBQ_1kg },
-  { name: 'Beef BBQ 500g', image: BBQ_Beef_500g },
-  { name: 'Breakfast Beef 500G', image: Beef_Breakfast_350g },
-  { name: 'Beef Hot Dogs', image: Beef_Hot_Dogs_1kg },
-  { name: 'English Beef 1kg', image: English_Style_Beef_1kg },
-  { name: 'English Beef 500g', image: EnglishBeefgs },
-  { name: 'Traditional Smoked Beef', image: SmokedBeef },
-];
-
-export const chickenSausages: Product[] = [
-  { name: 'English Chicken 1kg', image: EnglishChickenkg },
-  { name: 'Breakfast Chicken 700g', image: BreakfastChicken7gs },
-  { name: 'Breakfast Chicken 350g', image: BreakfastChickengs },
-];
-
-export const porkSausages: Product[] = [
-  { name: 'English Style Pork 1kg', image: EnglishStylePorkkg },
-  { name: 'English Style Pork 500g', image: EnglishStylePorkgs },
-  { name: 'Pork BBQ 1kg', image: PorkBBQkg },
-  { name: 'Pork BBQ 500g', image: PorkBBQgs },
-  { name: 'Pork Breakfast 700g', image: PorkBreakfast7gs },
-  { name: 'Pork Hot Dogs 1kg', image: PorkHotDogskg },
 ];
