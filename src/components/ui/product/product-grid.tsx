@@ -30,7 +30,7 @@ const ProductGrid: React.FC<{
         <Link
           href={purchaseUrl}
           target='_blank'
-          className='flex items-center justify-center gap-x-2 bg-red rounded-sm px-4 py-2 md:px-6 md:py-4 font-bold text-white'
+          className='flex items-center justify-center gap-x-2 rounded-sm px-4 py-2 md:px-6 md:py-4 font-bold text-white hover:shadow-lg bg-[#a93d42] hover:bg-red transition-all duration-300 ease-in-out'
         >
           <FaCartPlus size={30} />
           <p>BUY NOW</p>
