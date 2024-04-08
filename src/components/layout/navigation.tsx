@@ -12,7 +12,7 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import { IoMdArrowDropdown } from 'react-icons/io';
 
 const Navigation: React.FC = () => {
-  const [sideNavVisible, setSideNavVisible] = useState(true);
+  const [sideNavVisible, setSideNavVisible] = useState(false);
 
   return (
     <nav className='w-full h-20 flex items-center bg-black md:h-24 lg:h-32'>
