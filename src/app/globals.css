@@ -13,3 +13,12 @@ h3 {
 .p1 {
   @apply font-light text-lg lg:text-xl;
 }
+
+input,
+textarea {
+  @apply w-full border border-gray rounded-sm py-3 px-4 bg-slate-50 font-light;
+}
+
+textarea {
+  @apply h-40;
+}
