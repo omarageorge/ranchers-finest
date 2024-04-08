@@ -10,7 +10,7 @@ function ColdCuts() {
   return (
     <Fragment>
       <HeroSection title='Cold Cuts' image={heroColdCut} />
-      <GridContainer>
+      <GridContainer padding>
         <ProductGrid products={coldCuts} />
       </GridContainer>
     </Fragment>
