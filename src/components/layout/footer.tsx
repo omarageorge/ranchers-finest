@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className='w-full h-auto'>
+    <footer className='w-full h-auto md:h-[calc(100vh-50vh)] xl:h-[calc(100vh-25vh)]'>
       <div className='w-full h-full bg-black'>
         <div className='w-full h-auto px-8 py-20 md:px-10 md:py-28 xl:px-20 lx:py-32 xl:container xl:mx-auto'>
           <Row>
