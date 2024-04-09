@@ -16,6 +16,7 @@ const Slide: React.FC<{
       <Image
         src={src}
         alt={alt}
+        placeholder='blur'
         priority
         className='w-full h-full object-cover object-center '
       />
