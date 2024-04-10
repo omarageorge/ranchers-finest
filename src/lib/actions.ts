@@ -4,7 +4,6 @@ import { createTransport } from 'nodemailer';
 import { z } from 'zod';
 
 const EMAIL_SENDER = 'Ranchers Finest "<website@ranchersfinest.net>"';
-const EMAIL_RECIPIENT = 'georgeomara8@gmail.com';
 
 const MessageSchema = z.object({
   firstName: z.string(),
@@ -58,7 +57,7 @@ export async function sendMessage(formData: FormData) {
     // Send the email
     const info = await transporter.sendMail({
       from: EMAIL_SENDER,
-      to: EMAIL_RECIPIENT,
+      to: process.env.EMAIL_RECIPIENT,
       subject: passedData.subject,
       html: finalHTML,
     });
