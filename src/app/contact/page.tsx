@@ -1,8 +1,8 @@
 import contact from '@/assets/hero/hero-contact.jpg';
 import HeroSection from '@/components/ui/hero-section';
+import SubmitButton from '@/components/ui/submit-button';
 import { sendMessage } from '@/lib/actions';
 import { Fragment } from 'react';
-import { trajanPro } from '../fonts';
 
 function Contact() {
   return (
@@ -33,12 +33,7 @@ function Contact() {
                 <textarea name='message' placeholder='Message *'></textarea>
               </div>
               <div className=''>
-                <button
-                  type='submit'
-                  className={`${trajanPro.className} bg-black hover:bg-red text-white px-8 py-4 rounded-sm transition-all duration-300 ease-in`}
-                >
-                  Submit
-                </button>
+                <SubmitButton />
               </div>
             </form>
           </div>
