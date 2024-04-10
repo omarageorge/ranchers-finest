@@ -9,10 +9,10 @@ const SubmitButton: React.FC = () => {
   return (
     <button
       type='submit'
-      className={`${trajanPro.className} bg-black hover:bg-red text-white px-8 py-4 rounded-sm transition-all duration-300 ease-in`}
+      className={`${trajanPro.className} bg-black hover:bg-red text-white px-8 py-4 rounded-sm transition-all duration-300 ease-in disabled:bg-gray disabled:text-black`}
       disabled={pending}
     >
-      {pending ? 'Sending' : 'Submit'}
+      {pending ? 'Sending...' : 'Submit'}
     </button>
   );
 };
