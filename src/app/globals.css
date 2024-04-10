@@ -16,7 +16,7 @@ h3 {
 
 input,
 textarea {
-  @apply w-full border border-gray rounded-sm py-3 px-4 bg-slate-50 font-light;
+  @apply w-full border border-gray rounded-sm py-3 px-4 bg-slate-50 font-light focus:border-black focus:outline-none;
 }
 
 textarea {
