@@ -23,6 +23,6 @@ export type Product = {
 };
 
 export type ProductData = {
-  purchaseUrl: string;
+  purchaseUrl?: string;
   products: Product[];
 };

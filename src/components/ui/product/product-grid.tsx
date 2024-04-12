@@ -9,7 +9,7 @@ import { FaCartPlus } from 'react-icons/fa6';
 const ProductGrid: React.FC<{
   products: Product[];
   title?: string;
-  purchaseUrl: string;
+  purchaseUrl?: string;
 }> = ({ products, title, purchaseUrl }) => {
   return (
     <Fragment>
@@ -26,16 +26,18 @@ const ProductGrid: React.FC<{
           <ProductCard key={product.name} {...product} />
         ))}
       </div>
-      <div className='w-full flex items-center justify-center pt-10'>
-        <Link
-          href={purchaseUrl}
-          target='_blank'
-          className='flex items-center justify-center gap-x-2 rounded-sm px-4 py-2 md:px-6 md:py-4 font-bold text-white hover:shadow-lg bg-[#a93d42] hover:bg-red transition-all duration-300 ease-in-out'
-        >
-          <FaCartPlus size={30} />
-          <p>BUY NOW</p>
-        </Link>
-      </div>
+      {purchaseUrl && (
+        <div className='w-full flex items-center justify-center pt-10'>
+          <Link
+            href={purchaseUrl}
+            target='_blank'
+            className='flex items-center justify-center gap-x-2 rounded-sm px-4 py-2 md:px-6 md:py-4 font-bold text-white hover:shadow-lg bg-[#a93d42] hover:bg-red transition-all duration-300 ease-in-out'
+          >
+            <FaCartPlus size={30} />
+            <p>BUY NOW</p>
+          </Link>
+        </div>
+      )}
     </Fragment>
   );
 };
