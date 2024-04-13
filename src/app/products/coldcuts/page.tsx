@@ -3,7 +3,7 @@ import HeroSection from '@/components/ui/hero-section';
 import ProductGrid, {
   GridContainer,
 } from '@/components/ui/product/product-grid';
-import { coldCuts } from '@/lib/data';
+import { coldCuts } from '@/lib/products';
 import { Fragment } from 'react';
 
 function ColdCuts() {

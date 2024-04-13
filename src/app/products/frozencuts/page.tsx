@@ -3,7 +3,7 @@ import HeroSection from '@/components/ui/hero-section';
 import ProductGrid, {
   GridContainer,
 } from '@/components/ui/product/product-grid';
-import { frozenCuts } from '@/lib/data';
+import { frozenCuts } from '@/lib/products';
 import { Fragment } from 'react';
 
 function FrozenCuts() {
