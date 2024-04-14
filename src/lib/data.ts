@@ -2,42 +2,9 @@ import coldcuts from '@/assets/icons/cold-cuts.png';
 import frozencuts from '@/assets/icons/frozen-cuts.png';
 import sausage from '@/assets/icons/sausage.png';
 
-import BackBacon from '@/assets/Products/coldcuts/Back_Bacon_200g.webp';
-import SandwichHam from '@/assets/Products/coldcuts/Sandwich_Ham_200g.webp';
-import StreakyBacon from '@/assets/Products/coldcuts/Streaky_Bacon_200g.webp';
-
-import BeefBugger from '@/assets/Products/meatcuts/Beef_Burger_Patties.webp';
-import BeefCubes from '@/assets/Products/meatcuts/Beef_Cubes_500g.webp';
-import ChickenDrumsticks from '@/assets/Products/meatcuts/Chicken_Drumsticks_1kg.webp';
-
-import ChickenFillet from '@/assets/Products/meatcuts/Chicken_Fillet_1kg.webp';
-import ChickenLegs from '@/assets/Products/meatcuts/Chicken_Legs_1kg.webp';
-import ChickenThighs from '@/assets/Products/meatcuts/Chicken_Thighs_1kg.webp';
-import ChickenWings from '@/assets/Products/meatcuts/Chicken_Wings_1kg.webp';
-
-import BBQ_Beef_500g from '@/assets/Products/sausages/Beef/BBQ_Beef_500g.webp';
-import Beef_BBQ_1kg from '@/assets/Products/sausages/Beef/Beef_BBQ_1kg.webp';
-import Beef_Breakfast_350g from '@/assets/Products/sausages/Beef/Beef_Breakfast_350g.webp';
-import Beef_Hot_Dogs_1kg from '@/assets/Products/sausages/Beef/Beef_Hot_Dogs_1kg.webp';
-import English_Style_Beef_1kg from '@/assets/Products/sausages/Beef/English_Style_Beef_1kg.webp';
-import EnglishBeefgs from '@/assets/Products/sausages/Beef/English_Style_Beef_500g.webp';
-import SmokedBeef from '@/assets/Products/sausages/Beef/Traditional_Smoked_Beef.webp';
-
-import BreakfastChicken7gs from '@/assets/Products/sausages/Chicken/Breakfast_Chicken_700g.webp';
-import BreakfastChickengs from '@/assets/Products/sausages/Chicken/Chicken_Breakfast_350g.webp';
-import EnglishChickenkg from '@/assets/Products/sausages/Chicken/English_Style_Chicken_1kg.jpg';
-
-import EnglishStylePorkkg from '@/assets/Products/sausages/Pork/English_Style_Pork_1kg.webp';
-import EnglishStylePorkgs from '@/assets/Products/sausages/Pork/English_Style_Pork_500g.webp';
-import PorkBBQkg from '@/assets/Products/sausages/Pork/Pork_BBQ_1kg.webp';
-import PorkBBQgs from '@/assets/Products/sausages/Pork/Pork_BBQ_500g.webp';
-import PorkBreakfast7gs from '@/assets/Products/sausages/Pork/Pork_Breakfast_700g.webp';
-import PorkHotDogskg from '@/assets/Products/sausages/Pork/Pork_Hot_Dogs_1kg.webp';
-
 import {
   CustomerReview,
   ProductCategory,
-  ProductData,
   SocialMedia,
 } from '@/lib/definitions';
 import {
@@ -51,66 +18,11 @@ export const socialMedia: SocialMedia[] = [
   { url: 'https://ug.linkedin.com/company/ranchers-finest', icon: FaLinkedin },
   { url: 'https://twitter.com/ranchersfinest', icon: FaXTwitter },
   { url: 'https://www.instagram.com/ranchers.finest/', icon: FaInstagram },
-  { url: 'https://www.facebook.com/ranchersfinest', icon: FaFacebook },
+  {
+    url: 'https://www.facebook.com/profile.php?id=61556780924008&mibextid=ZbWKwL',
+    icon: FaFacebook,
+  },
 ];
-
-export const frozenCuts: ProductData = {
-  purchaseUrl: 'https://legourmetkampala.com/collections/frozen-cuts',
-  products: [
-    { name: 'Chicken Drumsticks', image: ChickenDrumsticks },
-    { name: 'Chicken Fillet', image: ChickenFillet },
-    { name: 'Chicken Legs', image: ChickenLegs },
-    { name: 'Chicken Thighs', image: ChickenThighs },
-    { name: 'Chicken Wings', image: ChickenWings },
-    { name: 'Beef Cubes', image: BeefCubes },
-    { name: 'Beef Burgers', image: BeefBugger },
-  ],
-};
-
-export const coldCuts: ProductData = {
-  purchaseUrl: 'https://legourmetkampala.com/collections/cold-cuts',
-  products: [
-    { name: 'Back Bacon', image: BackBacon },
-    { name: 'Sandwich Ham', image: SandwichHam },
-    { name: 'Streaky Bacon', image: StreakyBacon },
-  ],
-};
-
-export const beefSausages: ProductData = {
-  purchaseUrl:
-    'https://legourmetkampala.com/collections/ranchers-finest-beef-sausages-1',
-  products: [
-    { name: 'Beef BBQ 1kg', image: Beef_BBQ_1kg },
-    { name: 'Beef BBQ 500g', image: BBQ_Beef_500g },
-    { name: 'Breakfast Beef 500G', image: Beef_Breakfast_350g },
-    { name: 'Beef Hot Dogs', image: Beef_Hot_Dogs_1kg },
-    { name: 'English Beef 1kg', image: English_Style_Beef_1kg },
-    { name: 'English Beef 500g', image: EnglishBeefgs },
-    { name: 'Traditional Smoked Beef', image: SmokedBeef },
-  ],
-};
-export const chickenSausages: ProductData = {
-  purchaseUrl:
-    'https://legourmetkampala.com/collections/ranchers-finest-chicken-sausages-1',
-  products: [
-    { name: 'English Chicken 1kg', image: EnglishChickenkg },
-    { name: 'Breakfast Chicken 700g', image: BreakfastChicken7gs },
-    { name: 'Breakfast Chicken 350g', image: BreakfastChickengs },
-  ],
-};
-
-export const porkSausages: ProductData = {
-  purchaseUrl:
-    'https://legourmetkampala.com/collections/ranchers-finest-pork-sausages-1',
-  products: [
-    { name: 'English Style Pork 1kg', image: EnglishStylePorkkg },
-    { name: 'English Style Pork 500g', image: EnglishStylePorkgs },
-    { name: 'Pork BBQ 1kg', image: PorkBBQkg },
-    { name: 'Pork BBQ 500g', image: PorkBBQgs },
-    { name: 'Pork Breakfast 700g', image: PorkBreakfast7gs },
-    { name: 'Pork Hot Dogs 1kg', image: PorkHotDogskg },
-  ],
-};
 
 export const productCategories: ProductCategory[] = [
   {
