@@ -3,13 +3,13 @@ import HeroSection from '@/components/ui/hero-section';
 import ProductGrid, {
   GridContainer,
 } from '@/components/ui/product/product-grid';
+import { coldCuts } from '@/lib/products/cold-cuts';
+import { frozenCuts } from '@/lib/products/frozen-cuts';
 import {
   beefSausages,
   chickenSausages,
-  coldCuts,
-  frozenCuts,
   porkSausages,
-} from '@/lib/data';
+} from '@/lib/products/sausages';
 import { Fragment } from 'react';
 
 function Products() {

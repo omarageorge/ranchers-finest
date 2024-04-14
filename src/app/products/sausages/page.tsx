@@ -9,7 +9,7 @@ import {
   chickenSausages,
   goatSausages,
   porkSausages,
-} from '@/lib/products';
+} from '@/lib/products/sausages';
 import { Fragment } from 'react';
 
 function Sausages() {
