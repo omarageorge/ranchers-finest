@@ -1,5 +1,6 @@
 import { delius, proximaNova, trajanPro } from '@/app/fonts';
 import introImage from '@/assets/intro-image.png';
+import intro from '@/assets/intro.jpg';
 import whyUs from '@/assets/why-us.png';
 import Carousel from '@/components/ui/carousel/carousel';
 import CustomerReviewCard from '@/components/ui/customer-review-card';
@@ -39,7 +40,12 @@ export default function Home() {
               <Image
                 src={introImage}
                 alt='Sausages and Cold Cuts'
-                className='w-3/4 mx-auto md:hidden'
+                className='hidden w-3/4 mx-auto md:hidden'
+              />
+              <Image
+                src={intro}
+                alt='Sausages and Cold Cuts'
+                className='w-11/12 mx-auto rounded-md md:hidden'
               />
               <p
                 className={`${proximaNova.className} p1 font-light text-black text-center md:text-left`}
@@ -54,7 +60,12 @@ export default function Home() {
               <Image
                 src={introImage}
                 alt='Sausages and Cold Cuts'
-                className='W-3/4 xl:w-[580px]'
+                className='hidden W-3/4 xl:w-[580px]'
+              />
+              <Image
+                src={intro}
+                alt='Sausages and Cold Cuts'
+                className='W-3/4 xl:w-[580px] rounded-md shadow-md'
               />
             </div>
           </div>
@@ -103,8 +114,8 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className='w-full h-auto bg-[url("/ranch-bg.jpg")] bg-cover bg-center px-8 py-20 md:px-10 md:py-28 xl:px-20 xl:py-36'>
-          <div className='space-y-10 xl:container xl:mx-auto xl:space-y-14'>
+        <section className='w-full h-auto bg-[url("/ranch-bg.jpg")] bg-cover bg-center '>
+          <div className='space-y-10 px-8 py-20 md:px-10 md:py-28 xl:px-20 xl:py-36 xl:container xl:mx-auto xl:space-y-14'>
             <h3 className={`${trajanPro.className} text-white text-center`}>
               WHAT OUR CUSTOMERS SAY
             </h3>
