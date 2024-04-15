@@ -1,4 +1,4 @@
-import heroColdCut from '@/assets/hero/hero-coldcut2.jpg';
+import heroColdCut from '@/assets/hero/hero-coldcut.jpg';
 import HeroSection from '@/components/ui/hero-section';
 import ProductGrid, {
   GridContainer,
