@@ -10,7 +10,12 @@ import {
   goatSausages,
   porkSausages,
 } from '@/lib/products/sausages';
+import { Metadata } from 'next';
 import { Fragment } from 'react';
+
+export const metadata: Metadata = {
+  title: 'Sausages: Ranchers Finest',
+};
 
 function Sausages() {
   return (

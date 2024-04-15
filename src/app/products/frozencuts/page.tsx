@@ -4,7 +4,12 @@ import ProductGrid, {
   GridContainer,
 } from '@/components/ui/product/product-grid';
 import { frozenCuts } from '@/lib/products/frozen-cuts';
+import { Metadata } from 'next';
 import { Fragment } from 'react';
+
+export const metadata: Metadata = {
+  title: 'Frozen Cuts: Ranchers Finest',
+};
 
 function FrozenCuts() {
   return (
