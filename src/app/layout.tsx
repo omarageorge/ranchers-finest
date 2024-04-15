@@ -6,7 +6,7 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Ranchers Finest',
-  description: '',
+  description: "Kampala's Premier Sausages & Processed Meats",
 };
 
 export default function RootLayout({
