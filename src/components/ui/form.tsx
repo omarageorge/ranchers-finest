@@ -17,20 +17,25 @@ const ContactForm: React.FC = () => {
       className='space-y-4'
     >
       <div className='grid grid-cols-1 gap-x-4 gap-y-4 md:grid-cols-2 md:gap-y-0'>
-        <input type='text' name='firstName' placeholder='First Name *' />
-        <input type='text' name='lastName' placeholder='Last Name *' />
+        <input
+          type='text'
+          name='firstName'
+          placeholder='First Name *'
+          required
+        />
+        <input type='text' name='lastName' placeholder='Last Name *' required />
       </div>
       <div className='form-group'>
-        <input type='email' name='email' placeholder='Email *' />
+        <input type='email' name='email' placeholder='Email *' required />
       </div>
       <div className='form-group'>
-        <input type='tel' name='phone' placeholder='Phone *' />
+        <input type='tel' name='phone' placeholder='Phone *' required />
       </div>
       <div className='form-group'>
-        <input type='text' name='subject' placeholder='Subject *' />
+        <input type='text' name='subject' placeholder='Subject *' required />
       </div>
       <div className='form-group'>
-        <textarea name='message' placeholder='Message *'></textarea>
+        <textarea name='message' placeholder='Message *' required></textarea>
       </div>
       <div className=''>
         <SubmitButton />
