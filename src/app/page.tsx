@@ -48,7 +48,7 @@ export default function Home() {
                 className='w-11/12 mx-auto rounded-md md:hidden'
               />
               <p
-                className={`${proximaNova.className} p1 font-light text-black text-center md:text-left`}
+                className={`${proximaNova.className} p1 font-light text-black text-center md:text-left xl:w-[475px]`}
               >
                 Experience the finest sausages, cold cuts, and fresh meats
                 expertly crafted at our state-of-the-art facility in Kampala.
