@@ -30,16 +30,12 @@ export const frozenCuts: ProductData = {
       name: 'Prime Beef Sirloin Steak (200g)',
       image: Ranchers_Prime_Beef_Sirloin_Steak_200g,
     },
-    {
-      name: 'Prime Beef Sirloin Steak (200g)',
-      image: Ranchers_Prime_Beef_Sirloin_Steak_200g,
-    },
     { name: 'Prime Beef Steak (200g)', image: Ranchers_Prime_Beef_Steak_200g },
     { name: 'Pork Chops (4pcs)', image: Ranchers_Pork_Chops_4pcs },
     { name: 'Pork Cubes (1kg)', image: Ranchers_Pork_Cubes_1kg },
     { name: 'Pork Cubes (500g)', image: Ranchers_Pork_Cubes_500g },
-    { name: 'Beef Burgers (4pcs)', image: Ranchers_Beef_Burgers_4pcs },
-    { name: 'Beef Burgers (4pcs)', image: Betar_Beef_Burgers_4pcs },
+    { name: 'Ranchers Beef Burgers (4pcs)', image: Ranchers_Beef_Burgers_4pcs },
+    { name: 'Betar Beef Burgers (4pcs)', image: Betar_Beef_Burgers_4pcs },
     {
       name: 'Beef Burger Patties (4pcs)',
       image: Ranchers_Beef_Burger_Patties_4pcs,
