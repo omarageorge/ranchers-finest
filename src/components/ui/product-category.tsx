@@ -15,13 +15,14 @@ const ProductCategory: React.FC<ProductCategoryProps> = ({
   url,
 }) => {
   return (
-    <div className='grid grid-cols-1 gap-6'>
+    <div className='grid grid-cols-1 gap-6 lg:max-w-80'>
+      {/* // <div className='grid grid-cols-1 gap-6'> */}
       <Image
         src={icon}
         alt={name}
         priority
         loading='eager'
-        className='w-24 mx-auto lg:w-34 h-auto'
+        className='w-24 mx-auto lg:w-34 h-auto xl:h-24 object-contain '
       />
       <div className='text-center'>
         <div className='h-44 lg:h-52 xl:h-44 space-y-3'>
