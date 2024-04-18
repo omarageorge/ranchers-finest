@@ -16,6 +16,7 @@ const linkData: ILinkData[] = [
       { title: 'Sausages', url: '/products/sausages' },
       { title: 'Cold Cuts', url: '/products/coldcuts' },
       { title: 'Frozen Cuts', url: '/products/frozencuts' },
+      { title: 'Meat Cuts', url: '/products/meatcuts' },
     ],
   },
   {
