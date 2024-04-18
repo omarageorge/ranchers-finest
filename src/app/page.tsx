@@ -75,7 +75,8 @@ export default function Home() {
             <h3 className={`${trajanPro.className} text-yellow text-center`}>
               OUR PRODUCTS
             </h3>
-            <div className='grid grid-cols-1 gap-28 md:grid-cols-2 lg:grid-cols-3 lg:gap-4 xl:gap-24'>
+            {/* <div className='grid grid-cols-1 gap-y-20 md:grid-cols-2 md:gap-x-8 lg:grid-cols-3'> */}
+            <div className='grid grid-cols-1 gap-y-20 md:grid-cols-2 md:gap-x-8 lg:flex lg:gap-x-4 lg:flex-wrap lg:items-start lg:justify-evenly '>
               {productCategories.map((category, index) => (
                 <ProductCategory key={index} {...category} />
               ))}
