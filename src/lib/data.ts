@@ -60,7 +60,7 @@ export const customerReviews: CustomerReview[] = [
   {
     message:
       "I've tried many sausages in Kampala, but Ranchers Finest is on another level. The quality of the meat is incredible, and you can taste the difference in every bite. Highly recommend!",
-    customer: 'Sarah K',
+    customer: 'Sarah K.',
   },
   {
     message:
