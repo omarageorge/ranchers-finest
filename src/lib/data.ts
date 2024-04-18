@@ -1,5 +1,6 @@
 import coldcuts from '@/assets/icons/cold-cuts.png';
 import frozencuts from '@/assets/icons/frozen-cuts.png';
+import meatcuts from '@/assets/icons/meat-cuts.png';
 import sausage from '@/assets/icons/sausage.png';
 
 import {
@@ -43,8 +44,15 @@ export const productCategories: ProductCategory[] = [
     icon: frozencuts,
     name: 'Frozen Cuts',
     description:
-      'High-quality Beef, Chicken, and Pork cuts (Chops, Ribs, Steaks, etc.) for hotels and restaurants, meeting international standards.',
+      'Prepacked Premium Beef, Chicken & Pork Cuts (Chops, Ribs, Steaks & More) - Butcher-Quality for Your Home Cooking!',
     url: '/products/frozencuts',
+  },
+  {
+    icon: meatcuts,
+    name: 'Meat Cuts',
+    description:
+      'High-quality Beef, Chicken, and Pork cuts (Chops, Ribs, Steaks, etc.) for hotels and restaurants, meeting international standards',
+    url: '/products/meatcuts',
   },
 ];
 
