@@ -7,7 +7,7 @@ export interface ILinkData {
 
 const linkData: ILinkData[] = [
   { title: 'Home', url: '/' },
-  // { title: 'About', url: '/about' },
+  { title: 'About', url: '/about' },
   {
     title: 'Products',
     url: '/products',
