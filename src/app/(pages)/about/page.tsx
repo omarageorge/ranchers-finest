@@ -3,7 +3,6 @@ import aboutImage from '@/assets/about-page.jpg';
 import aboutHero from '@/assets/hero/hero-about.jpg';
 import AboutCard from '@/components/ui/about/about-card';
 import HeroSection from '@/components/ui/hero-section';
-import NavSpacer from '@/components/ui/nav-spacer';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import { Fragment } from 'react';
@@ -15,7 +14,6 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <Fragment>
-      <NavSpacer />
       <HeroSection title='About Us' image={aboutHero} />
       <main className='w-full h-auto bg-white'>
         <div className='space-y-20 px-8 py-20 md:px-10 md:py-28 xl:px-20 xl:py-36 xl:container xl:mx-auto'>
