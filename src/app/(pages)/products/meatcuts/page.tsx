@@ -15,7 +15,7 @@ function FreshCuts() {
   return (
     <Fragment>
       <HeroSection title='Meat Cuts' image={heroFreshCuts} />
-      <GridContainer padding>
+      <GridContainer>
         <ProductGrid products={beefCuts.products} title='Beef Cuts' />
         <ProductGrid products={poultryCuts.products} title='Chicken Cuts' />
         <ProductGrid products={porkCuts.products} title='Pork Cuts' />
