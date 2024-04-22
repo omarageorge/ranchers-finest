@@ -21,7 +21,7 @@ const ProductGrid: React.FC<{
         </h3>
       )}
 
-      <div className='w-full grid grid-cols-2 gap-y-20 justify-center lg:grid-cols-3'>
+      <div className='w-full grid grid-cols-2 gap-y-20 justify-center md:gap-x-5 lg:grid-cols-3 lg:gap-x-10 xl:gap-x-20'>
         {products.map((product) => (
           <ProductCard key={product.name} {...product} />
         ))}
