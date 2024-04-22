@@ -1,9 +1,9 @@
+import { proximaNova } from '@/app/fonts';
 import contact from '@/assets/hero/hero-contact2.jpg';
 import ContactForm from '@/components/ui/form';
 import HeroSection from '@/components/ui/hero-section';
 import { Metadata } from 'next';
 import { Fragment } from 'react';
-import { proximaNova } from '../fonts';
 
 export const metadata: Metadata = {
   title: 'Contact: Ranchers Finest',
