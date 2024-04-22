@@ -4,6 +4,7 @@ import intro from '@/assets/intro.jpg';
 import whyUs from '@/assets/why-us.png';
 import Carousel from '@/components/ui/carousel/carousel';
 import CustomerReviewCard from '@/components/ui/customer-review-card';
+import NavSpacer from '@/components/ui/nav-spacer';
 import ProductCategory from '@/components/ui/product-category';
 import { customerReviews, productCategories } from '@/lib/data';
 import Image from 'next/image';
@@ -12,6 +13,7 @@ import { Fragment } from 'react';
 export default function Home() {
   return (
     <Fragment>
+      <NavSpacer />
       <header className='w-full h-[calc(100vh-5rem)] relative z-0 md:h-[calc(100vh-6rem)] lg:h-[calc(100vh-8rem)]'>
         <Carousel />
         <div className='w-full h-full absolute z-20 bg-[#000000] opacity-60'></div>
