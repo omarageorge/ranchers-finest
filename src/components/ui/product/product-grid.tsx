@@ -48,7 +48,6 @@ export const GridContainer: React.FC<{
   children: React.ReactNode;
   padding?: boolean;
 }> = ({ children, padding }) => (
-  // <main className='w-full bg-white px-8 py-20 md:px-10 md:py-28 xl:px-20 xl:py-32 xl:container xl:mx-auto'>
   <main
     className={clsx(
       'w-full bg-white px-8 pb-20 md:px-10 md:pb-28 xl:px-20 xl:pb-32 xl:container xl:mx-auto',
