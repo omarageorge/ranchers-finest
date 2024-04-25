@@ -1,4 +1,3 @@
-import Betar_Beef_Burgers_4pcs from '@/assets/products/frozen_cuts/Betar_Beef_Burgers_4pcs.png';
 import Ranchers_Beef_Burger_Patties_4pcs from '@/assets/products/frozen_cuts/Ranchers_Beef_Burger_Patties_4pcs.png';
 import Ranchers_Beef_Burgers_4pcs from '@/assets/products/frozen_cuts/Ranchers_Beef_Burgers_4pcs.png';
 import Ranchers_Beef_Cubes_500g from '@/assets/products/frozen_cuts/Ranchers_Beef_Cubes_500g.png';
@@ -35,7 +34,7 @@ export const frozenCuts: ProductData = {
     { name: 'Pork Cubes (1kg)', image: Ranchers_Pork_Cubes_1kg },
     { name: 'Pork Cubes (500g)', image: Ranchers_Pork_Cubes_500g },
     { name: 'Ranchers Beef Burgers (4pcs)', image: Ranchers_Beef_Burgers_4pcs },
-    { name: 'Betar Beef Burgers (4pcs)', image: Betar_Beef_Burgers_4pcs },
+
     {
       name: 'Beef Burger Patties (4pcs)',
       image: Ranchers_Beef_Burger_Patties_4pcs,

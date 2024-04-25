@@ -1,4 +1,3 @@
-import Betar_Mini_Beefyz_Sausages from '@/assets/products/sausages/Betar_Mini_Beefyz_Sausages.png';
 import Ranchers_Beef_Sausages_800g from '@/assets/products/sausages/Ranchers_Beef_Sausages_800g.png';
 import Ranchers_Chicken_Sausages_400g from '@/assets/products/sausages/Ranchers_Chicken_Sausages_400g.png';
 import Ranchers_Chicken_Sausages_800g from '@/assets/products/sausages/Ranchers_Chicken_Sausages_800g.png';
@@ -53,7 +52,6 @@ export const beefSausages: ProductData = {
       name: 'Traditional Smoked Beef Sausages',
       image: Ranchers_Traditional_Smoked_Beef_Sausages,
     },
-    { name: 'Betar Mini Beefyz Sausages', image: Betar_Mini_Beefyz_Sausages },
   ],
 };
 
