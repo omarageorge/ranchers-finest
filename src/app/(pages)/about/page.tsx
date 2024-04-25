@@ -8,7 +8,7 @@ import Image from 'next/image';
 import { Fragment } from 'react';
 
 export const metadata: Metadata = {
-  title: 'About: Ranchers Finest',
+  title: 'About',
 };
 
 export default function About() {

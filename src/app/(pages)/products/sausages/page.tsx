@@ -14,7 +14,7 @@ import { Metadata } from 'next';
 import { Fragment } from 'react';
 
 export const metadata: Metadata = {
-  title: 'Sausages: Ranchers Finest',
+  title: 'Sausages',
 };
 
 function Sausages() {

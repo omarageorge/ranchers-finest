@@ -8,7 +8,7 @@ import { Metadata } from 'next';
 import { Fragment } from 'react';
 
 export const metadata: Metadata = {
-  title: 'Cold Cuts: Ranchers Finest',
+  title: 'Cold Cuts',
 };
 
 function ColdCuts() {
