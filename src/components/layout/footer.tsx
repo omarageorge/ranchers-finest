@@ -40,15 +40,30 @@ const Footer: React.FC = () => {
             </Column>
 
             <Column title='SITE LINKS'>
-              {linkData.map((link) => (
-                <Link
-                  key={link.title}
-                  href={link.url}
-                  className='transition-all duration-300 ease-in hover:text-white hover:underline hover:underline-offset-8'
-                >
-                  {link.title}
-                </Link>
-              ))}
+              {linkData.map((link) =>
+                !link.subLinks ? ( // Check if there are no subLinks
+                  <Link
+                    key={link.title}
+                    href={link.url}
+                    target={link.target}
+                    className='transition-all duration-300 ease-in hover:text-white hover:underline hover:underline-offset-8'
+                  >
+                    {link.title}
+                  </Link>
+                ) : (
+                  <div key={link.title} className='grid grid-cols-1 gap-4'>
+                    {link.subLinks.map((subLink) => (
+                      <Link
+                        key={subLink.title}
+                        href={subLink.url}
+                        className='transition-all duration-300 ease-in hover:text-white hover:underline hover:underline-offset-8'
+                      >
+                        {subLink.title}
+                      </Link>
+                    ))}
+                  </div>
+                )
+              )}
             </Column>
           </Row>
         </div>
