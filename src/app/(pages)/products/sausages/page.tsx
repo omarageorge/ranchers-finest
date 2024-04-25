@@ -4,6 +4,7 @@ import ProductGrid, {
   GridContainer,
 } from '@/components/ui/product/product-grid';
 
+import { betarSausages } from '@/lib/products/betar';
 import {
   beefSausages,
   chickenSausages,
@@ -27,17 +28,22 @@ function Sausages() {
           title='Beef Sausages'
           purchaseUrl={beefSausages.purchaseUrl}
         />
+
         <ProductGrid
           products={chickenSausages.products}
           title='Chicken Sausages'
           purchaseUrl={chickenSausages.purchaseUrl}
         />
+
         <ProductGrid products={goatSausages.products} title='Goat Sausages' />
+
         <ProductGrid
           products={porkSausages.products}
           title='Pork Sausages'
           purchaseUrl={porkSausages.purchaseUrl}
         />
+
+        <ProductGrid products={betarSausages.products} title='Betar Sausages' />
       </GridContainer>
     </Fragment>
   );
