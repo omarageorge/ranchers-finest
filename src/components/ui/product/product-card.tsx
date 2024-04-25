@@ -10,11 +10,11 @@ const ProductCard: React.FC<{
       <Image
         src={image}
         alt={name}
-        className='w-3/4 h-40 block object-contain md:h-80  xl:w-96 xl:h-96'
+        className='w-3/4 h-40 block object-contain md:h-80 xl:w-96 xl:h-72'
       />
 
       <p
-        className={`${trajanPro.className} block mt-8 font-bold text-sm px-2 text-red text-center md:text-2xl`}
+        className={`${trajanPro.className} block mt-4 font-bold text-sm px-2 text-red text-center md:text-xl`}
       >
         {name}
       </p>
