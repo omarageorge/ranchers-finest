@@ -7,7 +7,7 @@ import './globals.css';
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.ranchersfinest.net'),
   title: {
-    default: 'Home',
+    default: 'Ranchers Finest',
     template: '%s - Ranchers Finest',
   },
   openGraph: {
