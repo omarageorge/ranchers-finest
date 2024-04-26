@@ -2,6 +2,7 @@ import { proximaNova } from '@/app/fonts';
 import Footer from '@/components/layout/footer';
 import Navigation from '@/components/layout/navigation';
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -34,6 +35,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
+      <head>
+        <Script
+          async
+          src='https://www.googletagmanager.com/gtag/js?id=G-TZ8XSMQ91C'
+        ></Script>
+        <Script id='google-analytics'>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          
+            gtag('config', 'G-TZ8XSMQ91C');
+        `}
+        </Script>
+      </head>
       <body className={`${proximaNova.className} antialiased scroll-smooth`}>
         <Navigation />
         {children}
