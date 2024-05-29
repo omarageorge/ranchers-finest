@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
     // <footer className='w-full h-auto md:h-[calc(100vh-50vh)] xl:h-[calc(100vh-25vh)]'>
     <footer className='w-full h-auto'>
       <div className='w-full h-full bg-black'>
-        <div className='w-full h-auto px-8 py-20 md:px-10 md:py-28 xl:px-20 lx:py-32 xl:container xl:mx-auto'>
+        <div className='w-full h-auto px-8 py-20 md:px-10 md:py-28 lg:px-20 lg:py-36 xl:container xl:mx-auto'>
           <Row>
             <Column title='OUR LOCATION'>
               <span>Plot 3300, 3301, 3302 & 4723</span>
