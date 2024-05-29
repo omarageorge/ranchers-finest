@@ -32,8 +32,8 @@ export default function Home() {
       </header>
       <main>
         <section className='w-full h-auto bg-white'>
-          <div className='w-full flex flex-col px-8 py-20 md:flex-row md:items-center md:justify-evenly md:gap-10 md:px-10 md:py-28 xl:px-20 xl:py-36 xl:container xl:mx-auto xl:gap-0'>
-            <div className='w-full space-y-14 md:w-1/2 md:space-y-6 xl:w-[550px]'>
+          <div className='w-full flex flex-col px-8 py-20 md:flex-row md:items-center md:justify-evenly md:gap-10 md:px-10 md:py-28 lg:px-20 lg:py-36 xl:container xl:mx-auto xl:gap-0'>
+            <div className='w-full space-y-14 md:w-1/2 md:space-y-6 lg:w-[550px]'>
               <h3
                 className={`${trajanPro.className} text-red text-center md:text-left`}
               >
@@ -50,7 +50,7 @@ export default function Home() {
                 className='w-11/12 mx-auto rounded-md md:hidden'
               />
               <p
-                className={`${proximaNova.className} p1 font-light text-black text-center md:text-left xl:w-[475px]`}
+                className={`${proximaNova.className} p1 font-light text-black text-center md:text-left lg:w-[475px]`}
               >
                 Experience the finest sausages, cold cuts, and fresh meats
                 expertly crafted at our state-of-the-art facility in Kampala.
@@ -62,12 +62,12 @@ export default function Home() {
               <Image
                 src={introImage}
                 alt='Sausages and Cold Cuts'
-                className='hidden W-3/4 xl:w-[580px]'
+                className='hidden W-3/4 lg:w-[580px]'
               />
               <Image
                 src={intro}
                 alt='Sausages and Cold Cuts'
-                className='W-3/4 xl:w-[580px] rounded-md shadow-md'
+                className='W-3/4 lg:w-[580px] rounded-md shadow-md'
               />
             </div>
           </div>
