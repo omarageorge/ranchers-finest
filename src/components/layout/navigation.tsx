@@ -18,7 +18,7 @@ const Navigation: React.FC = () => {
     <nav className='w-full h-20 fixed z-50 flex items-center bg-black md:h-24 lg:h-32'>
       <div className='w-full flex items-center justify-between lg:container lg:mx-auto xl:px-20'>
         {/* Nav Links */}
-        <span className='w-full flex items-center justify-between gap-14 xl:w-fit'>
+        <span className='w-full flex items-center justify-between gap-14 lg:w-fit'>
           <Link href='/' className='ml-6 xl:ml-0'>
             <Image src={logo} className='w-20 xl:w-32' alt='' priority />
           </Link>
@@ -39,7 +39,7 @@ const Navigation: React.FC = () => {
             {linkData.map((link) => (
               <li
                 key={link.title}
-                className='border-b border-b-white py-3 px-6 transition-all duration-200 ease-in lg:border-b-0 xl:p-0'
+                className='border-b border-b-white py-3 px-6 transition-all duration-200 ease-in lg:border-b-0 lg:p-0'
               >
                 {link.subLinks ? (
                   <div className='group'>
@@ -49,12 +49,12 @@ const Navigation: React.FC = () => {
                       {link.title} <IoMdArrowDropdown size={20} />
                     </a>
 
-                    <ul className='hidden group-hover:block w-full bg-raven rounded-md text-white xl:absolute xl:w-fit xl:bg-opacity-85 xl:rounded-sm'>
+                    <ul className='hidden group-hover:block w-full bg-raven rounded-md text-white lg:absolute lg:w-fit lg:bg-opacity-85 lg:rounded-sm'>
                       {link.subLinks.map((subLink) => (
                         <li key={subLink.title} className='w-full'>
                           <Link
                             href={subLink.url}
-                            className={`${trajanPro.className} block px-6 py-2 text-sm xl:py-4 xl:hover:bg-black xl:hover:text-yellow`}
+                            className={`${trajanPro.className} block px-6 py-2 text-sm lg:py-4 lg:hover:bg-black lg:hover:text-yellow`}
                             onClick={() => setSideNavVisible(false)}
                           >
                             {subLink.title}
@@ -79,7 +79,7 @@ const Navigation: React.FC = () => {
         </span>
 
         {/* Social Media */}
-        <span className='hidden text-2xl gap-5 xl:inline-flex'>
+        <span className='hidden text-2xl gap-5 lg:inline-flex'>
           {socialMedia.map((link) => (
             <Link
               key={link.url}
