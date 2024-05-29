@@ -16,10 +16,10 @@ export default function About() {
     <Fragment>
       <HeroSection title='About Us' image={aboutHero} />
       <main className='w-full h-auto bg-white'>
-        <div className='space-y-20 px-8 py-20 md:px-10 md:py-28 xl:px-20 xl:py-36 xl:container xl:mx-auto'>
+        <div className='space-y-20 px-8 py-20 md:px-10 md:py-28 lg:px-20 lg:py-36 xl:container xl:mx-auto'>
           <section className='w-full h-auto bg-white'>
-            <div className='w-full flex flex-col md:flex-row md:items-center md:justify-evenly md:gap-10 xl:gap-0'>
-              <div className='w-full space-y-14 md:w-1/2 md:space-y-6 xl:w-[550px]'>
+            <div className='w-full flex flex-col md:flex-row md:items-center md:justify-evenly md:gap-10 lg:gap-0'>
+              <div className='w-full space-y-14 md:w-1/2 md:space-y-6 lg:w-[550px]'>
                 <h3
                   className={`${trajanPro.className} text-red text-center md:text-left`}
                 >
@@ -36,7 +36,7 @@ export default function About() {
                   className='w-96 h-80 object-cover object-left  mx-auto rounded-full md:hidden'
                 />
                 <p
-                  className={`${proximaNova.className} p1 font-light text-black text-center md:text-left xl:w-[475px]`}
+                  className={`${proximaNova.className} p1 font-light text-black text-center md:text-left lg:w-[475px]`}
                 >
                   Ranchers Finest is a dynamic and pioneering start-up in the
                   food and hospitality industry, emerging from the divestment of
@@ -50,7 +50,7 @@ export default function About() {
                 <Image
                   src={aboutImage}
                   alt='Sausages and Cold Cuts'
-                  className='W-96 h-80 xl:w-[480px] xl:h-[460px] rounded-full object-cover object-left shadow-md'
+                  className='W-96 h-80 lg:w-[480px] lg:h-[460px] rounded-full object-cover object-left shadow-md'
                 />
               </div>
             </div>
