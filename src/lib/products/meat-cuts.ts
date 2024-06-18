@@ -32,7 +32,7 @@ export const beefCuts: ProductData = {
     { name: 'Roast Veal', image: Ranchers_Roast_veal },
     { name: 'Rump Steak', image: Ranchers_Rump_Steak },
     { name: 'Sirloin Steak', image: Ranchers_Sirloin_Steak },
-    { name: 'Spare Ribs', image: Ranchers_Spare_Ribs },
+
     { name: 'Prime Beef Steak', image: Ranchers_Prime_Beef_Steak },
     { name: 'T-bone Steak', image: Ranchers_Tbone_Steak },
     { name: 'Beef Fillet', image: Ranchers_beef_fillet },
@@ -57,6 +57,7 @@ export const porkCuts: ProductData = {
     { name: 'Pork Steak', image: Ranchers_Pork_Steak },
     { name: 'Pork Chops', image: Ranchers_Pork_Chops },
     { name: 'Pork Strips', image: Ranchers_Pork_Strips },
+    { name: 'Spare Ribs', image: Ranchers_Spare_Ribs },
     { name: 'Pork Cubes', image: Ranchers_Pork_Cubes },
     { name: 'Pork Rack', image: Ranchers_Pork_Rack },
     { name: 'Pork Leg', image: Ranchers_Pork_Leg },
