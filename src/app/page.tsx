@@ -1,6 +1,7 @@
 import { delius, proximaNova, trajanPro } from '@/app/fonts';
 import introImage from '@/assets/intro-image.png';
 import intro from '@/assets/intro.jpg';
+import Rolex from '@/assets/recipe/rolex.png';
 import whyUs from '@/assets/why-us.png';
 import Carousel from '@/components/ui/carousel/carousel';
 import CustomerReviewCard from '@/components/ui/customer-review-card';
@@ -8,6 +9,7 @@ import NavSpacer from '@/components/ui/nav-spacer';
 import ProductCategory from '@/components/ui/product-category';
 import { customerReviews, productCategories } from '@/lib/data';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Fragment } from 'react';
 
 export default function Home() {
@@ -117,6 +119,47 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <section className='w-full h-auto bg-[#f1f5f9]'>
+          <div className='w-full flex flex-col px-8 py-20 md:flex-row md:items-center md:justify-evenly md:gap-10 md:px-10 md:py-28 lg:px-20 lg:py-36 xl:container xl:mx-auto'>
+            <div className='w-full space-y-14 md:w-1/2 md:space-y-6 xl:w-[550px]'>
+              <h3
+                className={`${trajanPro.className} text-red text-center md:text-left`}
+              >
+                Rolex Reimagined: The BLT Rolex
+              </h3>
+
+              <Image
+                src={Rolex}
+                alt='The BLT Rolex'
+                className='w-2/3 mx-auto md:hidden'
+              />
+
+              <p
+                className={`${proximaNova.className} p1 font-light text-black text-center md:text-left`}
+              >
+                A fusion of crispy bacon, fluffy omelette, fresh veggies, and
+                soft chapati. Bursting with flavor and customizable with chutney
+                or mayo, it's the perfect meal for any time of day.
+              </p>
+
+              <Link
+                href='/recipes/rolex'
+                className='block w-fit h-auto px-6 py-4 mx-auto bg-[#dc2626] rounded-full font-semibold text-sm text-[#e5e7eb] hover:bg-red transition-colors duration-300 ease-in md:mx-0'
+              >
+                Checkout Recipe
+              </Link>
+            </div>
+            <div className='hidden md:flex md:w-1/2 md:items-center justify-center'>
+              <Image
+                src={Rolex}
+                alt='The BLT Rolex'
+                className='W-3/4 lg:w-[550px]'
+              />
+            </div>
+          </div>
+        </section>
+
         <section className='w-full h-auto bg-[url("/ranch-bg.jpg")] bg-cover bg-center '>
           <div className='space-y-10 px-8 py-20 md:px-10 md:py-28 lg:px-20 lg:py-36 xl:container xl:mx-auto xl:space-y-14'>
             <h3 className={`${trajanPro.className} text-white text-center`}>
