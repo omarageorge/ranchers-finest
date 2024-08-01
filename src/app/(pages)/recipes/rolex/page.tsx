@@ -16,6 +16,8 @@ export default function Page() {
             src={RolexImage}
             alt='Final Rolex Image'
             className='block w-full h-60  lg:h-[48rem] object-cover object-center rounded-lg'
+            placeholder='blur'
+            priority
           />
         </div>
 

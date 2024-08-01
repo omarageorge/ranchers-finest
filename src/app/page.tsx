@@ -133,6 +133,7 @@ export default function Home() {
                 src={Rolex}
                 alt='The BLT Rolex'
                 className='w-2/3 mx-auto md:hidden'
+                placeholder='blur'
               />
 
               <p
@@ -155,6 +156,7 @@ export default function Home() {
                 src={Rolex}
                 alt='The BLT Rolex'
                 className='W-3/4 lg:w-[550px]'
+                placeholder='blur'
               />
             </div>
           </div>
