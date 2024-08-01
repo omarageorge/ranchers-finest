@@ -1,6 +1,13 @@
 import { trajanPro } from '@/app/fonts';
 import RolexImage from '@/assets/recipe/rolex-page.jpeg';
+import { Metadata } from 'next';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: 'The BLT Rolex',
+  description:
+    "A fusion of crispy bacon, fluffy omelette, fresh veggies, and soft chapati. Bursting with flavor and customizable with chutney or mayo, it's the perfect meal for any time of day.",
+};
 
 export default function Page() {
   return (
