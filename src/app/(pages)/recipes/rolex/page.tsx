@@ -2,6 +2,7 @@ import { trajanPro } from '@/app/fonts';
 import RolexImage from '@/assets/recipe/rolex-page.jpeg';
 import { Metadata } from 'next';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'The BLT Rolex',
@@ -28,8 +29,10 @@ export default function Page() {
           />
         </div>
 
-        <div className='w-10/12 mx-auto pt-6 space-y-6'>
-          <h4 className='font-bold text-lg lg:text-2xl'>Ingredients</h4>
+        <div className='w-full md:w-10/12 mx-auto pt-6 space-y-6'>
+          <h4 className='font-bold text-lg lg:text-2xl underline'>
+            Ingredients
+          </h4>
           <ul className='list-disc list-inside pl-4 p1 space-y-3'>
             <li>
               2 chapatis (grab from your local chapati-maker or make yourself)
@@ -48,7 +51,9 @@ export default function Page() {
             <li>2 tbsp mayonnaise (optional)</li>
           </ul>
 
-          <h4 className='font-bold text-lg lg:text-2xl'>Instructions</h4>
+          <h4 className='font-bold text-lg lg:text-2xl underline'>
+            Instructions
+          </h4>
           <dl className='p1'>
             <dt className='font-semibold'>Sizzle up the bacon:</dt>
             <dd className='mb-3'>
@@ -80,6 +85,14 @@ export default function Page() {
               filling, and chapati.
             </dd>
           </dl>
+
+          <Link
+            href='https://legourmetkampala.com/products/ranchers-finest-streaky-bacon-200g?_pos=3&_sid=57c35bd18&_ss=r'
+            target='_blank'
+            className='block bg-red hover:bg-yellow px-8 py-4 w-fit mx-auto rounded-full font-bold text-lg transition-colors duration-300 ease-in text-white hover:text-raven'
+          >
+            Buy Bacon here
+          </Link>
         </div>
       </div>
     </main>
