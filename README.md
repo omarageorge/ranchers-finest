@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ranchers Finest Ltd. Official Website
 
-## Getting Started
+This repository contains the source code for the official website of Ranchers Finest Ltd., built using Next.js 14. The project is managed using Yarn and leverages the latest front-end technologies to deliver a fast, responsive, and accessible user experience.
 
-First, run the development server:
+## Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Development](#development)
+- [Building](#building)
+- [Deployment](#deployment)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Overview
+
+Ranchers Finest Ltd. Kampala‘s Premier Sausages & Processed Meats. This website serves as the primary online presence for the company, showcasing our products, services, and company values.
+
+## Features
+
+- **Responsive Design:** Optimized for viewing on all devices, from mobile to desktop.
+- **Dynamic Content:** Powered by Next.js 14, enabling server-side rendering and dynamic routing.
+- **Fast Performance:** Leveraging modern web technologies for optimized loading times.
+- **SEO Optimized:** Built-in SEO features with Next.js to improve search engine rankings.
+- **Accessible:** Designed with accessibility in mind, ensuring a user-friendly experience for all visitors.
+
+## Installation
+
+To get started with the project, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/omarageorge/ranchers-finest.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd ranchers-finest
+   ```
+
+3. Install the dependencies using Yarn:
+   ```bash
+   yarn install
+   ```
+
+## Development
+
+To start the development server, run:
 
 ```bash
-npm run dev
-# or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This will launch the website locally at `http://localhost:3000`, with hot reloading enabled for a smooth development experience.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Building
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+To create an optimized production build, run:
 
-## Learn More
+```bash
+yarn build
+```
 
-To learn more about Next.js, take a look at the following resources:
+This will generate static files in the `.next` directory, ready for deployment.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+You can deploy the website to your preferred hosting provider. Some popular options include:
 
-## Deploy on Vercel
+- [Vercel](https://vercel.com/)
+- [Netlify](https://www.netlify.com/)
+- [AWS Amplify](https://aws.amazon.com/amplify/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To deploy on Vercel (recommended).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Technologies Used
+
+- **Next.js 14:** The latest version of Next.js, a powerful React framework for building server-rendered applications.
+- **React:** A JavaScript library for building user interfaces.
+- **Yarn:** A fast and reliable package manager.
+- **SCSS/CSS Modules:** For styling components with scoped CSS.
+
+## Contributing
+
+We welcome contributions from the community. To contribute:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-name`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add new feature'`).
+5. Push to the branch (`git push origin feature-name`).
+6. Create a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
