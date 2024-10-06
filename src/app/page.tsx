@@ -3,6 +3,7 @@ import introImage from '@/assets/intro-image.png';
 import intro from '@/assets/intro.jpg';
 import Rolex from '@/assets/recipe/rolex.png';
 import whyUs from '@/assets/why-us.png';
+import DownloadCatalog from '@/components/download-catalog';
 import Carousel from '@/components/ui/carousel/carousel';
 import CustomerReviewCard from '@/components/ui/customer-review-card';
 import NavSpacer from '@/components/ui/nav-spacer';
@@ -30,6 +31,8 @@ export default function Home() {
           >
             Relish the flavour
           </h2>
+
+          <DownloadCatalog />
         </div>
       </header>
       <main>
@@ -52,12 +55,19 @@ export default function Home() {
                 className='w-11/12 mx-auto rounded-md md:hidden'
               />
               <p
-                className={`${proximaNova.className} p1 font-light text-black text-center md:text-left lg:w-[475px]`}
+                className={`${proximaNova.className} p1 font-light text-black text-center md:text-left lg:max-w-[475px]`}
               >
-                Experience the finest sausages, cold cuts, and fresh meats
+                Experience the finest sausages, cold cuts, and fresh meats,
                 expertly crafted at our state-of-the-art facility in Kampala.
-                Our commitment to quality, freshness, and exceptional taste
-                promises a delicious experience in every bite.
+                Our unwavering commitment to quality, freshness, and exceptional
+                taste ensures a delightful experience in every bite. Proudly
+                awarded the <strong>ISO 20000</strong> certification, Ranchers
+                Finest upholds the highest standards in quality processes,
+                guaranteeing you the best products every time. Additionally,
+                Ranchers Finest has earned the renowned UNBS certification for
+                meeting the stringent product standards set by the
+                <strong> Uganda National Bureau of Standards</strong>, ensuring
+                our products are safe and of the highest quality.
               </p>
             </div>
             <div className='hidden md:flex md:w-1/2 md:items-center justify-center '>
@@ -97,7 +107,7 @@ export default function Home() {
               />
             </div>
 
-            <div className='w-full space-y-14 md:w-1/2 md:space-y-6 xl:w-[550px]'>
+            <div className='w-full space-y-14 md:w-1/2 md:space-y-6 xl:max-w-[550px]'>
               <h3
                 className={`${trajanPro.className} text-red text-center md:text-left`}
               >
@@ -162,7 +172,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className='w-full h-auto bg-[url("/ranch-bg.jpg")] bg-cover bg-center '>
+        <section className='w-full h-auto bg-[url("/ranch-bg.jpg")] bg-cover bg-center bg-[#121212]'>
           <div className='space-y-10 px-8 py-20 md:px-10 md:py-28 lg:px-20 lg:py-36 xl:container xl:mx-auto xl:space-y-14'>
             <h3 className={`${trajanPro.className} text-white text-center`}>
               WHAT OUR CUSTOMERS SAY
