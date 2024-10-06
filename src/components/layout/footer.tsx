@@ -5,6 +5,9 @@ import linkData from '@/lib/nav-links';
 import Link from 'next/link';
 import { createElement } from 'react';
 import Column from '../ui/footer/column';
+import ISO_CERT from '@/assets/iso.png';
+import UNBS_CERT from '@/assets/unbs.png';
+import Image from 'next/image';
 
 const Footer: React.FC = () => {
   const year = new Date().getFullYear();
@@ -40,31 +43,11 @@ const Footer: React.FC = () => {
               </div>
             </Column>
 
-            <Column title='SITE LINKS'>
-              {linkData.map((link) =>
-                !link.subLinks ? ( // Check if there are no subLinks
-                  <Link
-                    key={link.title}
-                    href={link.url}
-                    target={link.target}
-                    className='transition-all duration-300 ease-in hover:text-white hover:underline hover:underline-offset-8'
-                  >
-                    {link.title}
-                  </Link>
-                ) : (
-                  <div key={link.title} className='grid grid-cols-1 gap-4'>
-                    {link.subLinks.map((subLink) => (
-                      <Link
-                        key={subLink.title}
-                        href={subLink.url}
-                        className='transition-all duration-300 ease-in hover:text-white hover:underline hover:underline-offset-8'
-                      >
-                        {subLink.title}
-                      </Link>
-                    ))}
-                  </div>
-                )
-              )}
+            <Column title='CERTIFICATIONS'>
+              <div className='grid grid-cols-2'>
+                <Image src={ISO_CERT} className='w-20 h-auto' alt='' />
+                <Image src={UNBS_CERT} className='w-20 h-auto' alt='' />
+              </div>
             </Column>
           </Row>
         </div>
