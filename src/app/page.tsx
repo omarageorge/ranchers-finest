@@ -55,8 +55,9 @@ export default function Home() {
                 className='w-11/12 mx-auto rounded-md md:hidden'
               />
               <p
-                className={`${proximaNova.className} p1 font-light text-black text-center md:text-left lg:max-w-[475px]`}
+                className={`${proximaNova.className} p1 font-light text-black text-center md:text-left`}
               >
+                {/*  lg:w-[475px] */}
                 Experience the finest sausages, cold cuts, and fresh meats,
                 expertly crafted at our state-of-the-art facility in Kampala.
                 Our unwavering commitment to quality, freshness, and exceptional
@@ -65,8 +66,8 @@ export default function Home() {
                 Finest upholds the highest standards in quality processes,
                 guaranteeing you the best products every time. Additionally,
                 Ranchers Finest has earned the renowned UNBS certification for
-                meeting the stringent product standards set by the
-                <strong> Uganda National Bureau of Standards</strong>, ensuring
+                meeting the stringent product standards set by the{' '}
+                <strong>Uganda National Bureau of Standards</strong>, ensuring
                 our products are safe and of the highest quality.
               </p>
             </div>
