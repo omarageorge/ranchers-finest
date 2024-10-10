@@ -16,9 +16,9 @@ const DownloadCatalog = () => {
   return (
     <button
       onClick={handleFileDownload}
-      className='w-fit px-8 py-4 bg-red hover:bg-yellow rounded-full font-bold text-xl text-white hover:text-black transition-all duration-300 ease-in'
+      className='w-fit px-8 py-5 bg-red hover:bg-yellow rounded-full font-bold text-xl text-white hover:text-black transition-all duration-300 ease-in'
     >
-      Get Our Catalog
+      Download Catalogue
     </button>
   );
 };
