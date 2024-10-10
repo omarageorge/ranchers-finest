@@ -32,7 +32,7 @@ export default function Home() {
             Relish the flavour
           </h2>
 
-          <DownloadCatalog />
+          {/* <DownloadCatalog /> */}
         </div>
       </header>
       <main>
