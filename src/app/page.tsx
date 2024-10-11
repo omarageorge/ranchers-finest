@@ -3,7 +3,6 @@ import introImage from '@/assets/intro-image.png';
 import intro from '@/assets/intro.jpg';
 import Rolex from '@/assets/recipe/rolex.png';
 import whyUs from '@/assets/why-us.png';
-import DownloadCatalog from '@/components/download-catalog';
 import Carousel from '@/components/ui/carousel/carousel';
 import CustomerReviewCard from '@/components/ui/customer-review-card';
 import NavSpacer from '@/components/ui/nav-spacer';
@@ -98,40 +97,8 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className='w-full h-auto bg-gray'>
-          <div className='w-full flex flex-col px-8 py-20 md:flex-row md:items-center md:justify-evenly md:gap-10 md:px-10 md:py-28 lg:px-20 lg:py-36 xl:container xl:mx-auto'>
-            <div className='hidden md:flex md:w-1/2 md:items-center justify-center'>
-              <Image
-                src={whyUs}
-                alt='Sausages'
-                className='W-3/4 lg:w-[455px]'
-              />
-            </div>
 
-            <div className='w-full space-y-14 md:w-1/2 md:space-y-6 xl:max-w-[550px]'>
-              <h3
-                className={`${trajanPro.className} text-red text-center md:text-left`}
-              >
-                WHY CHOOSE Us?
-              </h3>
-              <Image
-                src={whyUs}
-                alt='Sausages'
-                className='w-2/3 mx-auto md:hidden'
-              />
-              <p
-                className={`${proximaNova.className} p1 font-light text-black text-center md:text-left`}
-              >
-                The difference in quality, flavor, and presentation makes
-                Ranchers Finest the clear choice for discerning customers. Our
-                commitment to quality ingredients and meticulous preparation
-                ensures every bite is simply delicious.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section className='w-full h-auto bg-[#f1f5f9]'>
+        <section className='w-full h-auto bg-[#f2f2f2]'>
           <div className='w-full flex flex-col px-8 py-20 md:flex-row md:items-center md:justify-evenly md:gap-10 md:px-10 md:py-28 lg:px-20 lg:py-36 xl:container xl:mx-auto'>
             <div className='w-full space-y-14 md:w-1/2 md:space-y-6 xl:w-[550px]'>
               <h3
@@ -169,6 +136,39 @@ export default function Home() {
                 className='W-3/4 lg:w-[550px]'
                 placeholder='blur'
               />
+            </div>
+          </div>
+        </section>
+
+        <section className='w-full h-auto bg-gray'>
+          <div className='w-full flex flex-col px-8 py-20 md:flex-row md:items-center md:justify-evenly md:gap-10 md:px-10 md:py-28 lg:px-20 lg:py-36 xl:container xl:mx-auto'>
+            <div className='hidden md:flex md:w-1/2 md:items-center justify-center'>
+              <Image
+                src={whyUs}
+                alt='Sausages'
+                className='W-3/4 lg:w-[455px]'
+              />
+            </div>
+
+            <div className='w-full space-y-14 md:w-1/2 md:space-y-6 xl:max-w-[550px]'>
+              <h3
+                className={`${trajanPro.className} text-red text-center md:text-left`}
+              >
+                WHY CHOOSE Us?
+              </h3>
+              <Image
+                src={whyUs}
+                alt='Sausages'
+                className='w-2/3 mx-auto md:hidden'
+              />
+              <p
+                className={`${proximaNova.className} p1 font-light text-black text-center md:text-left`}
+              >
+                The difference in quality, flavor, and presentation makes
+                Ranchers Finest the clear choice for discerning customers. Our
+                commitment to quality ingredients and meticulous preparation
+                ensures every bite is simply delicious.
+              </p>
             </div>
           </div>
         </section>
