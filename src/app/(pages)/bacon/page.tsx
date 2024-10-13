@@ -24,6 +24,7 @@ function Bacon() {
         <Image
           src={BaconBg}
           className='absolute z-10 w-full h-full object-cover object-center'
+          placeholder='blur'
           priority
           alt='Bacon Image'
         />
@@ -81,6 +82,7 @@ function Bacon() {
                 <Image
                   key={index}
                   src={image}
+                  placeholder='blur'
                   className='rounded-lg'
                   alt={`Bacon image - ${index}`}
                 />

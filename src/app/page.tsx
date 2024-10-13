@@ -89,7 +89,9 @@ export default function Home() {
             <div className='w-full pt-20 md:pt-28 lg:pt-36'>
               <Image
                 src={SayBu}
-                className='w-full h-auto rounded-lg lg:w-10/12 lg:mx-auto blink'
+                className='w-full h-auto rounded-lg lg:w-10/12 lg:mx-auto blink bg-[#ef8c33]'
+                placeholder='blur'
+                priority
                 alt='Say BU to BaconUp'
               />
 
