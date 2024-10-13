@@ -3,10 +3,9 @@ import BaconBg from '@/assets/bacon/bacon-bg.jpg';
 import BaconModel from '@/assets/bacon/bacon-model.png';
 import CallToAction from '@/components/call-to-action';
 import BaconUnitedForm from '@/components/ui/bacon-united-form';
-import SubmitButton from '@/components/ui/submit-button';
 import baconImages from '@/lib/bacon-images';
+import { Metadata } from 'next';
 import Image from 'next/image';
-import { Metadata } from 'next/types';
 import { Fragment } from 'react';
 
 export const metadata: Metadata = {
