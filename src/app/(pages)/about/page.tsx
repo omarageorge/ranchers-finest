@@ -9,6 +9,8 @@ import { Fragment } from 'react';
 
 export const metadata: Metadata = {
   title: 'About',
+  description:
+    'Ranchers Finest is a dynamic and pioneering start-up in the food and hospitality industry',
 };
 
 export default function About() {
