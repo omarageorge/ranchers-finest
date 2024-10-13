@@ -2,6 +2,7 @@ import { delius, proximaNova, trajanPro } from '@/app/fonts';
 import BaconBg from '@/assets/bacon/bacon-bg.jpg';
 import BaconModel from '@/assets/bacon/bacon-model.png';
 import CallToAction from '@/components/call-to-action';
+import BaconUnitedForm from '@/components/ui/bacon-united-form';
 import SubmitButton from '@/components/ui/submit-button';
 import baconImages from '@/lib/bacon-images';
 import Image from 'next/image';
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
 function Bacon() {
   return (
     <Fragment>
-      <header className='w-full h-[calc(100vh-5rem)] relative z-0'>
+      <header className='w-full h-[calc(100vh-5rem)] relative z-0 md:h-[calc(100vh-6rem)] lg:h-[calc(100vh-8rem)]'>
         <Image
           src={BaconBg}
           className='absolute z-10 w-full h-full object-cover object-center'
@@ -42,7 +43,7 @@ function Bacon() {
               experiences!
             </h2>
 
-            <CallToAction label='Join The Club' href='#join-us' />
+            <CallToAction label='Join US Now' href='#join-us' />
           </div>
         </div>
       </header>
@@ -115,35 +116,7 @@ function Bacon() {
             </div>
 
             <div className='flex md:w-1/2 md:items-center justify-center'>
-              <form action='' className='w-full space-y-4 lg:w-10/12'>
-                <div className='form-group'>
-                  <input
-                    type='text'
-                    name='name'
-                    placeholder='Name *'
-                    required
-                  />
-                </div>
-                <div className='form-group'>
-                  <input
-                    type='email'
-                    name='email'
-                    placeholder='Email *'
-                    required
-                  />
-                </div>
-                <div className='form-group'>
-                  <input
-                    type='text'
-                    name='profession'
-                    placeholder='Profession *'
-                    required
-                  />
-                </div>
-                <div className=''>
-                  <SubmitButton />
-                </div>
-              </form>
+              <BaconUnitedForm />
             </div>
           </div>
         </section>
