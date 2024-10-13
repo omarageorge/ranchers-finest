@@ -1,8 +1,10 @@
 import { delius, proximaNova, trajanPro } from '@/app/fonts';
+import SayBu from '@/assets/bacon/slides/04.jpg';
 import introImage from '@/assets/intro-image.png';
 import intro from '@/assets/intro.jpg';
 import Rolex from '@/assets/recipe/rolex.png';
 import whyUs from '@/assets/why-us.png';
+import CallToAction from '@/components/call-to-action';
 import Carousel from '@/components/ui/carousel/carousel';
 import CustomerReviewCard from '@/components/ui/customer-review-card';
 import NavSpacer from '@/components/ui/nav-spacer';
@@ -30,57 +32,68 @@ export default function Home() {
           >
             Relish the flavour
           </h2>
-
-          {/* <DownloadCatalog /> */}
         </div>
       </header>
       <main>
         <section className='w-full h-auto bg-white'>
-          <div className='w-full flex flex-col px-8 py-20 md:flex-row md:items-center md:justify-evenly md:gap-10 md:px-10 md:py-28 lg:px-20 lg:py-36 xl:container xl:mx-auto xl:gap-0'>
-            <div className='w-full space-y-14 md:w-1/2 md:space-y-6 lg:w-[550px]'>
-              <h3
-                className={`${trajanPro.className} text-red text-center md:text-left`}
-              >
-                Kampala&lsquo;s Premier Sausages & Processed Meats
-              </h3>
-              <Image
-                src={introImage}
-                alt='Sausages and Cold Cuts'
-                className='hidden w-3/4 mx-auto md:hidden'
-              />
-              <Image
-                src={intro}
-                alt='Sausages and Cold Cuts'
-                className='w-11/12 mx-auto rounded-md md:hidden'
-              />
-              <p
-                className={`${proximaNova.className} p1 font-light text-black text-center md:text-left`}
-              >
-                {/*  lg:w-[475px] */}
-                Experience the finest sausages, cold cuts, and fresh meats,
-                expertly crafted at our state-of-the-art facility in Kampala.
-                Our unwavering commitment to quality, freshness, and exceptional
-                taste ensures a delightful experience in every bite. Proudly
-                awarded the <strong>ISO 20000</strong> certification, Ranchers
-                Finest upholds the highest standards in quality processes,
-                guaranteeing you the best products every time. Additionally,
-                Ranchers Finest has earned the renowned UNBS certification for
-                meeting the stringent product standards set by the{' '}
-                <strong>Uganda National Bureau of Standards</strong>, ensuring
-                our products are safe and of the highest quality.
-              </p>
+          <div className='w-full px-8 py-20 md:px-10 md:py-28 lg:px-20 lg:py-36 xl:container xl:mx-auto '>
+            <div className='w-full flex flex-col md:flex-row md:items-center md:justify-evenly md:gap-10 xl:gap-0'>
+              <div className='w-full space-y-14 md:w-1/2 md:space-y-6 lg:w-[550px]'>
+                <h3
+                  className={`${trajanPro.className} text-red text-center md:text-left`}
+                >
+                  Kampala&lsquo;s Premier Sausages & Processed Meats
+                </h3>
+                <Image
+                  src={introImage}
+                  alt='Sausages and Cold Cuts'
+                  className='hidden w-3/4 mx-auto md:hidden'
+                />
+                <Image
+                  src={intro}
+                  alt='Sausages and Cold Cuts'
+                  className='w-11/12 mx-auto rounded-md md:hidden'
+                />
+                <p
+                  className={`${proximaNova.className} p1 font-light text-black text-center md:text-left`}
+                >
+                  {/*  lg:w-[475px] */}
+                  Experience the finest sausages, cold cuts, and fresh meats,
+                  expertly crafted at our state-of-the-art facility in Kampala.
+                  Our unwavering commitment to quality, freshness, and
+                  exceptional taste ensures a delightful experience in every
+                  bite. Proudly awarded the <strong>ISO 20000</strong>{' '}
+                  certification, Ranchers Finest upholds the highest standards
+                  in quality processes, guaranteeing you the best products every
+                  time. Additionally, Ranchers Finest has earned the renowned
+                  UNBS certification for meeting the stringent product standards
+                  set by the{' '}
+                  <strong>Uganda National Bureau of Standards</strong>, ensuring
+                  our products are safe and of the highest quality.
+                </p>
+              </div>
+              <div className='hidden md:flex md:w-1/2 md:items-center justify-center '>
+                <Image
+                  src={introImage}
+                  alt='Sausages and Cold Cuts'
+                  className='hidden W-3/4 lg:w-[580px]'
+                />
+                <Image
+                  src={intro}
+                  alt='Sausages and Cold Cuts'
+                  className='W-3/4 lg:w-[580px] rounded-md shadow-md'
+                />
+              </div>
             </div>
-            <div className='hidden md:flex md:w-1/2 md:items-center justify-center '>
+
+            <div className='w-full pt-20 md:pt-28 lg:pt-36'>
               <Image
-                src={introImage}
-                alt='Sausages and Cold Cuts'
-                className='hidden W-3/4 lg:w-[580px]'
+                src={SayBu}
+                className='w-full h-auto rounded-lg lg:w-10/12 lg:mx-auto blink'
+                alt='Say BU to BaconUp'
               />
-              <Image
-                src={intro}
-                alt='Sausages and Cold Cuts'
-                className='W-3/4 lg:w-[580px] rounded-md shadow-md'
-              />
+
+              <CallToAction label='Learn More' href='/bacon' />
             </div>
           </div>
         </section>
