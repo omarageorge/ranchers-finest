@@ -6,6 +6,10 @@
   @apply outline-none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h3 {
   @apply font-bold text-2xl lg:text-4xl;
 }
@@ -21,4 +25,18 @@ textarea {
 
 textarea {
   @apply h-40;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.blink {
+  animation: blink 0.4s step-end infinite;
 }
