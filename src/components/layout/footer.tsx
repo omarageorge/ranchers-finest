@@ -44,10 +44,20 @@ const Footer: React.FC = () => {
             </Column>
 
             <Column title='CERTIFICATIONS'>
-              <div className='grid grid-cols-2'>
-                <Image src={ISO_CERT} className='w-20 h-auto' alt='' />
-                <Image src={UNBS_CERT} className='w-20 h-auto' alt='' />
-              </div>
+              <Link href='/certificates'>
+                <div className='grid grid-cols-2'>
+                  <Image
+                    src={ISO_CERT}
+                    className='w-20 h-auto'
+                    alt='ISO Certificate'
+                  />
+                  <Image
+                    src={UNBS_CERT}
+                    className='w-20 h-auto'
+                    alt='UNBS Permit'
+                  />
+                </div>
+              </Link>
             </Column>
           </Row>
         </div>
