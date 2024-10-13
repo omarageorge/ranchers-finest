@@ -93,7 +93,7 @@ export default function Home() {
                 alt='Say BU to BaconUp'
               />
 
-              <CallToAction label='Learn More' href='/bacon' />
+              <CallToAction label='Join The Club' href='/bacon' />
             </div>
           </div>
         </section>
