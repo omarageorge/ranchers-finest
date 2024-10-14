@@ -1,14 +1,20 @@
 import { trajanPro } from '@/app/fonts';
 import Link from 'next/link';
+import { boolean } from 'zod';
 
-const CallToAction: React.FC<{ label: string; href: string }> = ({
-  label,
-  href,
-}) => {
+const CallToAction: React.FC<{
+  label: string;
+  href: string;
+  centered?: boolean;
+}> = ({ label, href, centered }) => {
   return (
     <Link href={href}>
       <button
-        className={`${trajanPro.className} block w-fit mx-auto mt-10 px-6 py-3 lg:px-8 lg:py-4 bg-red hover:bg-yellow rounded-full font-normal lg:font-medium text-md md:text-lg lg:text-xl text-white hover:text-black transition-all duration-200 ease-in`}
+        className={`${
+          trajanPro.className
+        } block w-fit mt-8 px-6 py-3 lg:px-6 lg:py-3 bg-red hover:bg-yellow rounded-full font-normal lg:font-medium text-md text-white hover:text-black transition-all duration-200 ease-in ${
+          centered && 'mx-auto'
+        } `}
       >
         {label}
       </button>
