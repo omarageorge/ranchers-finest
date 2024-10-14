@@ -2,6 +2,7 @@ import { delius, proximaNova, trajanPro } from '@/app/fonts';
 import BaconBg from '@/assets/bacon/bacon-bg.jpg';
 import BaconModel from '@/assets/bacon/bacon-model.png';
 import CallToAction from '@/components/call-to-action';
+import PopupModal from '@/components/modal';
 import BaconUnitedForm from '@/components/ui/bacon-united-form';
 import baconImages from '@/lib/bacon-images';
 import { Metadata } from 'next';
@@ -19,8 +20,7 @@ export const metadata: Metadata = {
 function Bacon() {
   return (
     <Fragment>
-      <div></div>
-
+      {/* <PopupModal /> */}
       <header className='w-full h-[calc(100vh-5rem)] relative z-0 md:h-[calc(100vh-6rem)] lg:h-[calc(100vh-8rem)]'>
         <Image
           src={BaconBg}
