@@ -19,6 +19,8 @@ export const metadata: Metadata = {
 function Bacon() {
   return (
     <Fragment>
+      <div></div>
+
       <header className='w-full h-[calc(100vh-5rem)] relative z-0 md:h-[calc(100vh-6rem)] lg:h-[calc(100vh-8rem)]'>
         <Image
           src={BaconBg}
@@ -119,7 +121,13 @@ function Bacon() {
               </p>
             </div>
 
-            <div className='flex md:w-1/2 md:items-center justify-center'>
+            <div className='flex flex-col md:w-1/2 md:items-center justify-center'>
+              <h3
+                className={`${delius.className} font-normal text-[#f39200] text-center text-md mb-4`}
+              >
+                Register here
+              </h3>
+
               <BaconUnitedForm />
             </div>
           </div>
