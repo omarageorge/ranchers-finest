@@ -43,36 +43,28 @@ function Bacon() {
               experiences!
             </h2>
 
-            <CallToAction label='Join US Now' href='#join-us' />
+            <CallToAction label='Join US Now' href='#join-us' centered />
           </div>
         </div>
       </header>
       <main className='w-full h-auto'>
         <section className='w-full h-auto'>
           <div className='w-full px-8 py-20 md:px-10 md:py-28 lg:px-20 lg:py-36 xl:container xl:mx-auto'>
-            <div className='space-y-6 mb-10'>
+            <div className='space-y-6 mb-20 md:mb-28 lg:mb-36'>
               <h3 className={`${trajanPro.className} text-red text-center`}>
-                Premium Bacon Range
+                Your Goals Are Within Reach
               </h3>
 
               <p
                 className={`${proximaNova.className} p1 font-light text-black text-center lg:w-7/12 lg:mx-auto`}
               >
-                <span className='font-semibold italic'>
-                  Ranchers Finest premium bacon range
-                </span>{' '}
-                is not just a treat for your taste buds; it's a source of energy
-                and motivation to power you through your day. Imagine starting
-                your morning with the crispy delight of{' '}
-                <span className='font-semibold italic'>
-                  Uganda's best bacon!
-                </span>{' '}
-                Whether encased in a delicious chapati to make an exceptional{' '}
-                <span className='font-semibold italic'>BLT Rolex</span> or
-                crowning your breakfast{' '}
-                <span className='font-semibold italic'>Katogo recipe</span>,
-                it's sure to invigorate your mind and spirit to tackle any
-                challenge.
+                Bacon United is here to help you achieve them. This is about
+                more than just bacon—it's about embracing your unique self, your
+                strengths, and your passions. We believe that when you are true
+                to who you are, you unlock your full potential. Whether you're
+                aiming to crush it in the gym, master a new skill, or simply
+                start every day with a win, our mission is to fuel your success
+                and inspire you to "Be U."
               </p>
             </div>
 
@@ -96,13 +88,14 @@ function Bacon() {
               <h3
                 className={`${trajanPro.className} text-red text-center md:text-left`}
               >
-                #BaconUp
+                Unite with Us!
               </h3>
               <Image
                 src={BaconModel}
                 alt='Sausages'
                 className='w-2/3 mx-auto md:hidden'
               />
+
               <p
                 className={`${proximaNova.className} p1 font-light text-black text-center md:text-left`}
               >
@@ -113,6 +106,16 @@ function Bacon() {
                 will elevate every adventure. Don't wait
                 <span className='font-semibold italic'>—Bacon Up</span> and fuel
                 your success with every delicious bite!
+              </p>
+
+              <p
+                className={`${proximaNova.className} p1 font-light text-black text-center md:text-left`}
+              >
+                This isn't just about bacon—it's about unlocking your potential,
+                embracing your uniqueness, and reaching new heights. Join Bacon
+                United today and connect with others who are just as hungry for
+                success as you are. Together, we'll turn sizzling dreams into
+                reality and empower you to "Be U."
               </p>
             </div>
 
