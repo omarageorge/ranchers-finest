@@ -92,6 +92,7 @@ export default function Home() {
                 <Image
                   src={SayBu}
                   alt='Bacon United'
+                  placeholder='blur'
                   className='W-full h-auto rounded-xl blink'
                 />
               </div>
@@ -105,6 +106,7 @@ export default function Home() {
                 <Image
                   src={SayBu}
                   alt='Bacon United'
+                  placeholder='blur'
                   className='w-full h-auto rounded-xl blink md:hidden'
                 />
 
