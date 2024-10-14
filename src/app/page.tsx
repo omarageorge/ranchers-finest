@@ -52,10 +52,10 @@ export default function Home() {
                 <Image
                   src={intro}
                   alt='Sausages and Cold Cuts'
-                  className='w-11/12 mx-auto rounded-md md:hidden'
+                  className='w-full mx-auto rounded-md md:hidden'
                 />
                 <p
-                  className={`${proximaNova.className} p1 font-light text-black text-center md:text-left`}
+                  className={`${proximaNova.className} p1 font-light text-black text-left`}
                 >
                   {/*  lg:w-[475px] */}
                   Experience the finest sausages, cold cuts, and fresh meats,
@@ -86,19 +86,46 @@ export default function Home() {
               </div>
             </div>
 
-            <div className='w-full pt-20 md:pt-28 lg:pt-36'>
-              <Image
-                src={SayBu}
-                className='w-full h-auto rounded-lg lg:w-10/12 lg:mx-auto blink bg-[#ef8c33]'
-                placeholder='blur'
-                priority
-                alt='Say BU to BaconUp'
-              />
+            {/* New */}
+            <div className='w-full pt-20 md:pt-28 lg:pt-36 flex flex-col md:flex-row md:items-center md:justify-evenly md:gap-10'>
+              <div className='hidden md:flex md:w-1/2 md:items-center justify-center'>
+                <Image
+                  src={SayBu}
+                  alt='Bacon United'
+                  className='W-full h-auto rounded-xl blink'
+                />
+              </div>
+              <div className='w-full space-y-14 md:w-1/2 md:space-y-6 xl:max-w-[550px]'>
+                <h3
+                  className={`${trajanPro.className} text-red text-center md:text-left`}
+                >
+                  Bacon United: Fuel Your Mission, Be U, Achieve Your Goals!
+                </h3>
 
-              <CallToAction label='Join The Club' href='/bacon' />
+                <Image
+                  src={SayBu}
+                  alt='Bacon United'
+                  className='w-full h-auto rounded-xl blink md:hidden'
+                />
+
+                <p
+                  className={`${proximaNova.className} p1 font-light text-black text-left`}
+                >
+                  At Bacon United, we believe that greatness starts with a
+                  single, sizzling idea—and what better way to fuel your journey
+                  than with the power of bacon? We''re not just a community;
+                  we''re a movement of go-getters who know that with the right
+                  mindset, the right bacon, and the courage to "Be U," anything
+                  is possible.
+                </p>
+
+                <CallToAction label='Join The Mission' href='/bacon' centered />
+              </div>
             </div>
+            {/* End */}
           </div>
         </section>
+
         <section className='w-full h-auto bg-raven'>
           <div className='w-full space-y-24 px-8 py-32 md:px-10 md:py-28 lg:px-20 lg:py-36 xl:container xl:mx-auto xl:space-y-28'>
             <h3 className={`${trajanPro.className} text-yellow text-center`}>
