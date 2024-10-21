@@ -95,7 +95,7 @@ export async function joinBaconUnited(formData: FormData) {
 
     const info = await transporter.sendMail({
       from: EMAIL_SENDER,
-      to: process.env.EMAIL_RECIPIENT,
+      to: 'campaign@ranchersfinest.net',
       subject: `${passedData.name} Registered for Bacon United`,
       html: finalHTML,
     });
