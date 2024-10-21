@@ -4,7 +4,7 @@ import SubmitButton from '@/components/ui/submit-button';
 import { joinBaconUnited } from '@/lib/actions';
 import { useRef } from 'react';
 
-function BaconUnitedForm() {
+function BaconUnitedForm({ closeModal }: { closeModal?: () => void }) {
   const ref = useRef<HTMLFormElement>(null);
 
   return (
@@ -13,8 +13,12 @@ function BaconUnitedForm() {
       action={async (formData: FormData) => {
         await joinBaconUnited(formData);
         ref.current?.reset();
+        closeModal &&
+          setTimeout(() => {
+            closeModal();
+          }, 1000);
       }}
-      className='w-full space-y-4 lg:w-10/12'
+      className='w-full space-y-4'
     >
       <div className='form-group'>
         <input type='text' name='name' placeholder='Name *' required />
