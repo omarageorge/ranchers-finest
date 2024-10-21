@@ -40,7 +40,6 @@ export default function RootLayout({
           async
           src='https://www.googletagmanager.com/gtag/js?id=G-TZ8XSMQ91C'
         ></Script>
-
         <Script id='google-analytics'>
           {`
             window.dataLayer = window.dataLayer || [];
@@ -48,14 +47,6 @@ export default function RootLayout({
             gtag('js', new Date());
           
             gtag('config', 'G-TZ8XSMQ91C');
-        `}
-        </Script>
-        <Script>
-          {`
-            (function(m, o, n, t, e, r, _){
-          m['__GetResponseAnalyticsObject'] = e;m[e] = m[e] || function() {(m[e].q = m[e].q || []).push(arguments)};
-          r = o.createElement(n);_ = o.getElementsByTagName(n)[0];r.async = 1;r.src = t;r.setAttribute('crossorigin', 'use-credentials');_.parentNode .insertBefore(r, _);
-      })(window, document, 'script', 'https://an.gr-wcon.com/script/3b580b38-f20e-4a32-aebd-1007bb01db6c/ga.js', 'GrTracking');
         `}
         </Script>
       </head>
